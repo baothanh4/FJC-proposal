@@ -15,21 +15,21 @@
     <title>Proposal :: Internship Report</title>
 
     
-    <link href="../css/nucleus.css?1762234406" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1762234406" rel="stylesheet">
-    <link href="../css/hybrid.css?1762234406" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1762234406" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1762234406" rel="stylesheet">
-    <link href="../css/auto-complete.css?1762234406" rel="stylesheet">
-    <link href="../css/atom-one-dark-reasonable.css?1762234406" rel="stylesheet">
-    <link href="../css/theme.css?1762234406" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1762234406" rel="stylesheet">
+    <link href="../css/nucleus.css?1762355749" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1762355749" rel="stylesheet">
+    <link href="../css/hybrid.css?1762355749" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1762355749" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1762355749" rel="stylesheet">
+    <link href="../css/auto-complete.css?1762355749" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1762355749" rel="stylesheet">
+    <link href="../css/theme.css?1762355749" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1762355749" rel="stylesheet">
     
-    <link href="../css/theme-workshop.css?1762234406" rel="stylesheet">
+    <link href="../css/theme-workshop.css?1762355749" rel="stylesheet">
     
     
 
-    <script src="../js/jquery-3.3.1.min.js?1762234406"></script>
+    <script src="../js/jquery-3.3.1.min.js?1762355749"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1762234406"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1762234406"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1762355749"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1762355749"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/";
     
 </script>
-<script type="text/javascript" src="../js/search.js?1762234406"></script>
+<script type="text/javascript" src="../js/search.js?1762355749"></script>
  
   </div>
 
@@ -982,16 +982,43 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#1-introduction">1. Introduction</a></li>
-        <li><a href="#2-objectives">2. Objectives</a></li>
-        <li><a href="#3-scope">3. Scope</a></li>
-        <li><a href="#4-aws-cloud-architecture">4. AWS Cloud Architecture</a></li>
-        <li><a href="#5-implementation-plan">5. Implementation Plan</a></li>
-        <li><a href="#6-budget--resources">6. Budget &amp; Resources</a></li>
-        <li><a href="#7-expected-outcomes">7. Expected Outcomes</a></li>
-        <li><a href="#8-conclusion">8. Conclusion</a></li>
+        <li><a href="#secure--scalable--cost-optimized-cloud-architecture">Secure — Scalable — Cost-Optimized Cloud Architecture</a></li>
       </ul>
     </li>
+    <li><a href="#executive-summary">Executive Summary</a></li>
+    <li><a href="#key-highlights">Key Highlights</a></li>
+    <li><a href="#1-project-objectives">1. Project Objectives</a></li>
+    <li><a href="#2-project-scope">2. Project Scope</a>
+      <ul>
+        <li><a href="#21-functional-requirements">2.1 Functional Requirements</a></li>
+        <li><a href="#22-non-functional-requirements">2.2 Non-Functional Requirements</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-proposed-aws-architecture">3. Proposed AWS Architecture</a>
+      <ul>
+        <li><a href="#31-overview">3.1 Overview</a></li>
+        <li><a href="#architecture-diagram-summary">Architecture Diagram Summary</a></li>
+        <li><a href="#32-networking--access-layer">3.2 Networking &amp; Access Layer</a></li>
+        <li><a href="#33-application--api-layer">3.3 Application &amp; API Layer</a></li>
+        <li><a href="#34-data--storage-layer">3.4 Data &amp; Storage Layer</a></li>
+        <li><a href="#35-security--authentication-layer">3.5 Security &amp; Authentication Layer</a></li>
+        <li><a href="#36-monitoring--compliance-layer">3.6 Monitoring &amp; Compliance Layer</a></li>
+        <li><a href="#37-cicd--automation-layer">3.7 CI/CD &amp; Automation Layer</a></li>
+        <li><a href="#data-flow-simplified">Data Flow (Simplified)</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-implementation-plan">4. Implementation Plan</a></li>
+    <li><a href="#5-budget--team">5. Budget &amp; Team</a></li>
+    <li><a href="#6-expected-outcomes">6. Expected Outcomes</a></li>
+    <li><a href="#7-risks--mitigation">7. Risks &amp; Mitigation</a>
+      <ul>
+        <li><a href="#71-risk-classification-matrix">7.1 Risk Classification Matrix</a></li>
+      </ul>
+    </li>
+    <li><a href="#8-compliance--security">8. Compliance &amp; Security</a></li>
+    <li><a href="#9-conclusion">9. Conclusion</a></li>
+    <li><a href="#10-success-metrics">10. Success Metrics</a></li>
+    <li><a href="#appendix-a--aws-services-summary">Appendix A — AWS Services Summary</a></li>
   </ul>
 </nav></div>
 </div>
@@ -1016,176 +1043,288 @@
 
 
 
-	<h1 id="metropolitan-railway-service-system-on-aws--secure-scalable-and-cost-optimized-cloud-architecture">Metropolitan Railway Service System on AWS — Secure, Scalable, and Cost-Optimized Cloud Architecture</h1>
-<h3 id="1-introduction">1. Introduction</h3>
-<p>As Ho Chi Minh City continues to expand rapidly, transportation challenges such as congestion and air pollution are intensifying.<br>
-The <strong>Metropolitan Railway Project</strong> represents a strategic initiative to deliver a modern, sustainable, and intelligent public transportation system.</p>
-<p>This proposal introduces a <strong>comprehensive AWS-based cloud architecture</strong> designed to power digital ticket booking, cashless payments, train scheduling, and operational analytics.<br>
-The solution leverages <strong>serverless</strong>, <strong>event-driven</strong>, and <strong>CI/CD-enabled</strong> AWS services to ensure scalability, cost efficiency, and robust security.</p>
+	<h1 id="urban-railway-service-system-on-aws">URBAN RAILWAY SERVICE SYSTEM ON AWS</h1>
+<h3 id="secure--scalable--cost-optimized-cloud-architecture">Secure — Scalable — Cost-Optimized Cloud Architecture</h3>
 <hr>
-<h3 id="2-objectives">2. Objectives</h3>
+<h2 id="executive-summary">Executive Summary</h2>
+<p>Ho Chi Minh City faces major transportation challenges, including congestion, pollution, and rapid urbanization.<br>
+The <strong>Urban Railway Project</strong> is seen as a breakthrough toward building a smart, sustainable, and eco-friendly transportation system.</p>
+<p>This proposal presents a <strong>comprehensive AWS-based cloud architecture</strong>, designed to support core functions such as:</p>
+<ul>
+<li>E-ticketing &amp; cashless payment</li>
+<li>Schedule management &amp; operational monitoring</li>
+<li>Data analytics &amp; passenger flow optimization</li>
+</ul>
+<p>The architecture follows the principles of <strong>serverless, event-driven, and CI/CD automation</strong>, ensuring:</p>
+<ul>
+<li>High performance and elastic scalability.</li>
+<li>Enterprise-grade end-to-end security.</li>
+<li>Cost-efficient operation through a pay-as-you-go model.</li>
+</ul>
+<hr>
+<h2 id="key-highlights">Key Highlights</h2>
+<ul>
+<li>100% cloud-native &amp; serverless architecture (AWS Lambda, EventBridge)</li>
+<li>End-to-end enterprise security (Cognito, WAF, KMS)</li>
+<li>Fully automated CI/CD &amp; observability (CodePipeline, CloudWatch)</li>
+<li>Seamless e-ticketing &amp; cashless payment (VNPay, MoMo)</li>
+<li>Real-time analytics &amp; predictive insights (Athena, QuickSight)</li>
+</ul>
+<hr>
+<h2 id="1-project-objectives">1. Project Objectives</h2>
 <p><strong>General Objective:</strong><br>
-To build a reliable and secure digital infrastructure for the Ho Chi Minh City Metropolitan Railway using AWS Cloud.</p>
+To build a reliable, secure, and scalable digital infrastructure for Ho Chi Minh City’s Urban Railway System on AWS Cloud.</p>
 <p><strong>Specific Objectives:</strong></p>
 <ul>
-<li>Deploy a <strong>serverless and event-driven</strong> cloud architecture using AWS Lambda and EventBridge.</li>
-<li>Enable <strong>online booking</strong>, <strong>digital payments</strong>, and <strong>real-time train schedule updates</strong>.</li>
-<li>Implement <strong>end-to-end security</strong> via WAF, Cognito, KMS, and Secrets Manager.</li>
-<li>Integrate <strong>CI/CD automation</strong> with CodePipeline, CodeBuild, and CodeDeploy.</li>
-<li>Establish <strong>monitoring and compliance</strong> with CloudWatch and CloudTrail.</li>
+<li>Deploy a <strong>serverless &amp; event-driven</strong> architecture using AWS Lambda and EventBridge.</li>
+<li>Provide <strong>ticket booking, payment, authentication, and real-time schedule updates</strong>.</li>
+<li>Apply <strong>end-to-end security</strong> with WAF, Cognito, KMS, and Secrets Manager.</li>
+<li>Automate CI/CD with <strong>CodePipeline, CodeBuild, CodeDeploy</strong>.</li>
+<li>Enable <strong>monitoring and compliance</strong> through CloudWatch and CloudTrail.</li>
 </ul>
 <hr>
-<h3 id="3-scope">3. Scope</h3>
-<ul>
-<li><strong>Location:</strong> Ho Chi Minh City Metro Line 1 (Bến Thành – Suối Tiên)</li>
-<li><strong>Target Users:</strong> Passengers, Metro Staff, Administrators</li>
-<li><strong>Project Duration:</strong> 12 years (from initial deployment to long-term operations)</li>
-<li><strong>Phase 1 Coverage:</strong> Ticket booking, authentication, scheduling, and payments</li>
-<li><strong>Future Phases:</strong> Predictive analytics, IoT-based train monitoring, and passenger flow optimization</li>
-</ul>
-<hr>
-<h3 id="4-aws-cloud-architecture">4. AWS Cloud Architecture</h3>
-<p>The proposed system follows a <strong>multi-layered, serverless AWS architecture</strong> combining scalability, automation, and enterprise-grade security.</p>
-<hr>
-<h4 id="1-network-and-access-layer"><strong>1. Network and Access Layer</strong></h4>
-<ul>
-<li><strong>Amazon Route 53:</strong><br>
-Manages domain routing for the Metro web and mobile portals. Ensures global DNS availability and low-latency routing.</li>
-<li><strong>Amazon CloudFront (CDN):</strong><br>
-Distributes static frontend assets globally with low latency, reducing load on backend systems.</li>
-<li><strong>AWS WAF (Web Application Firewall):</strong><br>
-Protects the application from DDoS, SQL injection, and cross-site scripting attacks.</li>
-<li><strong>AWS Shield (Integrated with CloudFront):</strong><br>
-Provides automatic DDoS protection for network and transport layers.</li>
-</ul>
-<hr>
-<h4 id="2-cicd-and-automation-layer"><strong>2. CI/CD and Automation Layer</strong></h4>
-<ul>
-<li><strong>AWS CodePipeline:</strong><br>
-Automates the entire build–test–deploy workflow, ensuring continuous integration and delivery for all application components.</li>
-<li><strong>AWS CodeBuild:</strong><br>
-Compiles and tests backend and frontend code automatically after each GitHub commit.</li>
-<li><strong>AWS CodeDeploy:</strong><br>
-Deploys new versions of Lambda functions and API configurations without downtime.</li>
-<li><strong>GitHub Integration:</strong><br>
-Serves as the source control repository, triggering CI/CD pipelines via webhook events.</li>
-</ul>
-<hr>
-<h4 id="3-authentication-and-security-layer"><strong>3. Authentication and Security Layer</strong></h4>
-<ul>
-<li><strong>Amazon Cognito:</strong><br>
-Manages user registration, login, password recovery, and MFA-based authentication. Issues secure JWT tokens for API access.</li>
-<li><strong>AWS Secrets Manager:</strong><br>
-Stores sensitive credentials (e.g., RDS passwords, API keys) securely and rotates them automatically.</li>
-<li><strong>AWS KMS (Key Management Service):</strong><br>
-Provides encryption for data at rest in RDS, S3, and environment variables in Lambda.</li>
-<li><strong>AWS CloudTrail:</strong><br>
-Logs and monitors every API call across all AWS accounts, ensuring compliance and traceability.</li>
-</ul>
-<hr>
-<h4 id="4-application-and-api-layer"><strong>4. Application and API Layer</strong></h4>
-<ul>
-<li><strong>Amazon API Gateway:</strong><br>
-Exposes secure RESTful endpoints for mobile/web clients and routes requests to backend Lambda functions.</li>
-<li><strong>AWS Lambda (Serverless Backend):</strong><br>
-Handles all business logic through modular microservices:
-<ul>
-<li><code>BookingServiceLambda</code> — Creates bookings and validates requests.</li>
-<li><code>PaymentLambda</code> — Processes VNPay or Momo payments.</li>
-<li><code>ScheduleLambda</code> — Manages timetable queries and updates.</li>
-<li><code>NotificationLambda</code> — Sends email/SMS notifications through SNS.</li>
-<li><code>EventBridge</code> — Triggers automated workflows (e.g., payment success → send receipt).</li>
-</ul>
-</li>
-<li><strong>Amazon EventBridge:</strong><br>
-Coordinates asynchronous events such as booking confirmation, cancellations, or delayed schedules.</li>
-</ul>
-<hr>
-<h4 id="5-data-and-storage-layer"><strong>5. Data and Storage Layer</strong></h4>
-<ul>
-<li><strong>Amazon RDS (SQL Server):</strong><br>
-Hosts structured data — passenger profiles, bookings, and payment transactions. Runs in private subnets with daily backups to S3.</li>
-<li><strong>Amazon DynamoDB (Optional Extension):</strong><br>
-Provides real-time caching for schedules and session data.</li>
-<li><strong>Amazon S3:</strong>
-<ul>
-<li>Hosts static frontend web assets (React app).</li>
-<li>Stores logs, receipts, and backup files.</li>
-<li>Implements lifecycle policies to archive data to <strong>S3 Glacier</strong> for cost optimization.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="6-monitoring-logging-and-compliance"><strong>6. Monitoring, Logging, and Compliance</strong></h4>
-<ul>
-<li><strong>Amazon CloudWatch:</strong><br>
-Tracks performance metrics, Lambda logs, and API Gateway latency. Generates alarms for operational anomalies.</li>
-<li><strong>CloudWatch Alarms + SNS:</strong><br>
-Notifies the DevOps team about threshold breaches (CPU usage, 5XX errors, etc.).</li>
-<li><strong>AWS CloudTrail:</strong><br>
-Records all API activities for auditing and compliance (ISO/GDPR-ready).</li>
-</ul>
-<hr>
-<h3 id="5-implementation-plan">5. Implementation Plan</h3>
+<h2 id="2-project-scope">2. Project Scope</h2>
 <table>
   <thead>
       <tr>
-          <th><strong>Phase</strong></th>
-          <th><strong>Duration</strong></th>
-          <th><strong>Key Deliverables</strong></th>
+          <th>Component</th>
+          <th>Description</th>
       </tr>
   </thead>
   <tbody>
       <tr>
+          <td><strong>Location</strong></td>
+          <td>Metro Line 1 (Ben Thanh – Suoi Tien), Ho Chi Minh City</td>
+      </tr>
+      <tr>
+          <td><strong>Target Users</strong></td>
+          <td>Passengers, Operators, Administrators</td>
+      </tr>
+      <tr>
+          <td><strong>Implementation Duration</strong></td>
+          <td>12 years (including deployment &amp; long-term operation)</td>
+      </tr>
+      <tr>
           <td><strong>Phase 1</strong></td>
-          <td>Weeks 1–2</td>
-          <td>Set up core AWS infrastructure: Route 53, CloudFront, API Gateway, Lambda, RDS</td>
+          <td>Ticketing, authentication, scheduling, payment</td>
       </tr>
       <tr>
-          <td><strong>Phase 2</strong></td>
-          <td>Weeks 3–4</td>
-          <td>Develop booking and authentication (Cognito, Lambda, EventBridge)</td>
-      </tr>
-      <tr>
-          <td><strong>Phase 3</strong></td>
-          <td>Weeks 5–6</td>
-          <td>Integrate payments, CloudWatch monitoring, and WAF protection</td>
-      </tr>
-      <tr>
-          <td><strong>Phase 4</strong></td>
-          <td>Weeks 7–8</td>
-          <td>Configure CI/CD pipelines using CodePipeline, CodeBuild, and CodeDeploy</td>
-      </tr>
-      <tr>
-          <td><strong>Phase 5</strong></td>
-          <td>Future</td>
-          <td>Add analytics layer (Athena, QuickSight)</td>
+          <td><strong>Expansion Phase</strong></td>
+          <td>Predictive analytics, IoT monitoring, passenger optimization</td>
       </tr>
   </tbody>
 </table>
 <hr>
-<h3 id="6-budget--resources">6. Budget &amp; Resources</h3>
+<h3 id="21-functional-requirements">2.1 Functional Requirements</h3>
 <table>
   <thead>
       <tr>
-          <th><strong>Component</strong></th>
-          <th><strong>Main Services</strong></th>
-          <th><strong>Estimated Monthly Cost (USD)</strong></th>
+          <th>ID</th>
+          <th>Requirement</th>
+          <th>Priority</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>Network &amp; CDN</td>
+          <td>FR-01</td>
+          <td>Users can book tickets and pay online</td>
+          <td>High</td>
+      </tr>
+      <tr>
+          <td>FR-02</td>
+          <td>Real-time schedule updates via API</td>
+          <td>High</td>
+      </tr>
+      <tr>
+          <td>FR-03</td>
+          <td>Automatic maintenance alerting</td>
+          <td>Medium</td>
+      </tr>
+      <tr>
+          <td>FR-04</td>
+          <td>Admin dashboard for passenger analytics</td>
+          <td>Medium</td>
+      </tr>
+      <tr>
+          <td>FR-05</td>
+          <td>Multi-language support (EN, VN)</td>
+          <td>Low</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="22-non-functional-requirements">2.2 Non-Functional Requirements</h3>
+<ul>
+<li><strong>Availability:</strong> ≥ 99.95% uptime (Multi-AZ)</li>
+<li><strong>Latency:</strong> &lt; 300 ms for booking operations</li>
+<li><strong>Security:</strong> ISO 27001 &amp; SOC 2 Type II compliant</li>
+<li><strong>Scalability:</strong> Auto-scale up to 100k concurrent users</li>
+<li><strong>Cost Efficiency:</strong> ≤ $100/month base infrastructure</li>
+</ul>
+<hr>
+<h2 id="3-proposed-aws-architecture">3. Proposed AWS Architecture</h2>
+<h3 id="31-overview">3.1 Overview</h3>
+<p>The system is designed with a <strong>multi-tier, serverless, and automated</strong> model, ensuring dynamic scalability, reliable operation, and comprehensive security.</p>
+<hr>
+<h3 id="architecture-diagram-summary">Architecture Diagram Summary</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Layer</th>
+          <th>Service</th>
+          <th>Role</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Frontend</strong></td>
+          <td>CloudFront + S3</td>
+          <td>Static hosting, caching, HTTPS delivery</td>
+      </tr>
+      <tr>
+          <td><strong>API Layer</strong></td>
+          <td>API Gateway + Lambda</td>
+          <td>Business logic, event-driven functions</td>
+      </tr>
+      <tr>
+          <td><strong>Data</strong></td>
+          <td>RDS + S3 + DynamoDB</td>
+          <td>Persistent and analytical data storage</td>
+      </tr>
+      <tr>
+          <td><strong>Security</strong></td>
+          <td>WAF + Cognito + KMS</td>
+          <td>Authentication, encryption, protection</td>
+      </tr>
+      <tr>
+          <td><strong>Monitoring</strong></td>
+          <td>CloudWatch + GuardDuty</td>
+          <td>Metrics, alerts, and anomaly detection</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="32-networking--access-layer">3.2 Networking &amp; Access Layer</h3>
+<ul>
+<li><strong>Amazon Route 53:</strong> DNS management for global availability.</li>
+<li><strong>Amazon CloudFront (CDN):</strong> Distributes static content and reduces backend load.</li>
+<li><strong>AWS WAF:</strong> Protects against DDoS, SQL Injection, and XSS attacks.</li>
+</ul>
+<hr>
+<h3 id="33-application--api-layer">3.3 Application &amp; API Layer</h3>
+<ul>
+<li><strong>Amazon API Gateway:</strong> Provides secure RESTful endpoints.</li>
+<li><strong>AWS Lambda:</strong> Handles core business logic:
+<ul>
+<li><code>BookingServiceLambda</code>: Ticket booking processing.</li>
+<li><code>PaymentLambda</code>: VNPay/MoMo payment integration.</li>
+<li><code>ScheduleLambda</code>: Schedule updates.</li>
+<li><code>NotificationLambda</code>: Sends notifications (SNS, email, SMS).</li>
+</ul>
+</li>
+<li><strong>Amazon EventBridge:</strong> Automates workflows (payment → invoice → notify).</li>
+</ul>
+<hr>
+<h3 id="34-data--storage-layer">3.4 Data &amp; Storage Layer</h3>
+<ul>
+<li><strong>Amazon RDS (SQL Server):</strong> Stores users, tickets, and payment data.</li>
+<li><strong>Amazon S3:</strong> Stores static files, logs, invoices, and backups.
+<ul>
+<li>Includes <strong>Lifecycle Policy → S3 Glacier</strong> for cost savings.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="35-security--authentication-layer">3.5 Security &amp; Authentication Layer</h3>
+<ul>
+<li><strong>Amazon Cognito:</strong> User registration, login, MFA, JWT token issuance.</li>
+<li><strong>AWS Secrets Manager:</strong> Stores and rotates sensitive keys.</li>
+<li><strong>AWS KMS:</strong> Encrypts RDS and S3 data.</li>
+<li><strong>AWS CloudTrail:</strong> Logs API activity for compliance and auditing.</li>
+</ul>
+<hr>
+<h3 id="36-monitoring--compliance-layer">3.6 Monitoring &amp; Compliance Layer</h3>
+<ul>
+<li><strong>Amazon CloudWatch:</strong> Tracks performance metrics and Lambda/API logs.</li>
+<li><strong>CloudWatch Alarms + SNS:</strong> Sends automatic alerts.</li>
+<li><strong>CloudTrail:</strong> Monitors user and system activity.</li>
+</ul>
+<hr>
+<h3 id="37-cicd--automation-layer">3.7 CI/CD &amp; Automation Layer</h3>
+<ul>
+<li><strong>AWS CodePipeline:</strong> Automates build–test–deploy workflows.</li>
+<li><strong>AWS CodeBuild:</strong> Tests backend/frontend code upon each commit.</li>
+<li><strong>AWS CodeDeploy:</strong> Enables zero-downtime deployment.</li>
+<li><strong>GitHub Webhook:</strong> Triggers pipelines automatically after commits.</li>
+</ul>
+<hr>
+<h3 id="data-flow-simplified">Data Flow (Simplified)</h3>
+<p>User -&gt; CloudFront -&gt;API Gateway -&gt; Lambda -&gt; RDS<br>
+|v
+EventBridge -&gt; SNS/Email Notification<br>
+|v
+CloudWatch -&gt; Admin Dashboard</p>
+<hr>
+<h2 id="4-implementation-plan">4. Implementation Plan</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Phase</th>
+          <th>Duration</th>
+          <th>Key Tasks</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>Weeks 1–2</td>
+          <td>Setup Route 53, CloudFront, API Gateway, Lambda, RDS</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>Weeks 3–4</td>
+          <td>Develop booking &amp; authentication (Cognito, Lambda, EventBridge)</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Weeks 5–6</td>
+          <td>Integrate payments, configure CloudWatch &amp; WAF</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>Weeks 7–8</td>
+          <td>Setup CI/CD (CodePipeline, CodeBuild, CodeDeploy)</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>Expansion</td>
+          <td>Data analytics (Athena, QuickSight)</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="5-budget--team">5. Budget &amp; Team</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Component</th>
+          <th>Services</th>
+          <th>Estimated Cost (USD/month)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Networking &amp; CDN</td>
           <td>Route 53, CloudFront, WAF</td>
           <td>$15</td>
       </tr>
       <tr>
-          <td>Serverless Backend</td>
+          <td>Backend Serverless</td>
           <td>Lambda, API Gateway, EventBridge</td>
           <td>$20</td>
       </tr>
       <tr>
-          <td>Database &amp; Storage</td>
+          <td>Data &amp; Storage</td>
           <td>RDS, S3</td>
           <td>$35</td>
       </tr>
@@ -1196,40 +1335,210 @@ Records all API activities for auditing and compliance (ISO/GDPR-ready).</li>
       </tr>
       <tr>
           <td>Security &amp; Monitoring</td>
-          <td>CloudWatch, CloudTrail, Cognito, Secrets Manager, KMS</td>
+          <td>CloudWatch, CloudTrail, Cognito, KMS</td>
           <td>$15</td>
       </tr>
       <tr>
-          <td><strong>Total Estimate</strong></td>
+          <td><strong>Total</strong></td>
           <td>—</td>
           <td><strong>≈ $95–100/month</strong></td>
       </tr>
   </tbody>
 </table>
-<p><strong>Human Resources:</strong></p>
+<p><strong>Team Members:</strong></p>
 <ul>
 <li>Cloud Architect</li>
-<li>Backend Developer (Lambda / API Gateway)</li>
-<li>Frontend Developer (React)</li>
+<li>Backend Developer (Lambda, API Gateway)</li>
+<li>Frontend Developer (React, S3/CloudFront)</li>
 <li>DevOps Engineer (CI/CD &amp; Monitoring)</li>
 <li>Metro Operations Specialist</li>
 </ul>
 <hr>
-<h3 id="7-expected-outcomes">7. Expected Outcomes</h3>
+<h2 id="6-expected-outcomes">6. Expected Outcomes</h2>
 <ul>
-<li>A <strong>secure, cloud-native railway management platform</strong> for passengers and administrators.</li>
-<li>Seamless <strong>cashless ticketing</strong> with automated booking confirmations.</li>
-<li>Scalable architecture supporting future IoT integration.</li>
-<li>Improved transparency and monitoring through analytics dashboards.</li>
-<li>Cost-effective operations with pay-as-you-go cloud pricing.</li>
+<li>A <strong>secure, modern platform</strong> built on AWS Cloud.</li>
+<li><strong>Cashless payments</strong> and <strong>automated ticket validation</strong>.</li>
+<li><strong>Scalable infrastructure</strong>, ready for IoT integration.</li>
+<li><strong>Operational transparency</strong> via analytics dashboard.</li>
+<li><strong>Optimized costs</strong> under pay-as-you-go model.</li>
 </ul>
 <hr>
-<h3 id="8-conclusion">8. Conclusion</h3>
-<p>The proposed <strong>Metropolitan Railway Service System on AWS</strong> establishes a strong foundation for digital transformation in urban transportation.<br>
-By combining <strong>serverless computing</strong>, <strong>CI/CD automation</strong>, and <strong>end-to-end AWS security</strong>, the system ensures operational excellence, scalability, and compliance with modern data standards.<br>
-This architecture not only supports current ticketing and scheduling needs but also positions the Metro for <strong>future smart-city integration and data-driven decision-making</strong>.</p>
+<h2 id="7-risks--mitigation">7. Risks &amp; Mitigation</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Risk</th>
+          <th>Mitigation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>AWS network outage</td>
+          <td>Implement Multi-AZ with automatic failover</td>
+      </tr>
+      <tr>
+          <td>Lambda overload</td>
+          <td>Enable autoscaling and set timeout limits</td>
+      </tr>
+      <tr>
+          <td>Security attack</td>
+          <td>Use WAF, IAM least privilege, and KMS</td>
+      </tr>
+      <tr>
+          <td>Data inconsistency</td>
+          <td>Automate RDS backup and recovery</td>
+      </tr>
+      <tr>
+          <td>Deployment errors</td>
+          <td>Enable CI/CD rollback and CloudFormation drift detection</td>
+      </tr>
+  </tbody>
+</table>
 <hr>
-<p><img src="../images/2-Proposal/aws_metropolitano_train_service.drawio.png" alt="AWS Architecture Diagram"></p>
+<h3 id="71-risk-classification-matrix">7.1 Risk Classification Matrix</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Risk</th>
+          <th>Likelihood</th>
+          <th>Impact</th>
+          <th>Mitigation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Network outage</td>
+          <td>Medium</td>
+          <td>High</td>
+          <td>Multi-AZ + Failover</td>
+      </tr>
+      <tr>
+          <td>API overload</td>
+          <td>High</td>
+          <td>Medium</td>
+          <td>Lambda concurrency + autoscaling</td>
+      </tr>
+      <tr>
+          <td>Data breach</td>
+          <td>Low</td>
+          <td>High</td>
+          <td>KMS encryption + WAF</td>
+      </tr>
+      <tr>
+          <td>CI/CD failure</td>
+          <td>Medium</td>
+          <td>Low</td>
+          <td>Rollback + versioning</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="8-compliance--security">8. Compliance &amp; Security</h2>
+<ul>
+<li><strong>Compliance:</strong> ISO 27001, GDPR-ready, SOC2 Type II</li>
+<li><strong>Encryption:</strong> AES-256 (KMS-managed)</li>
+<li><strong>IAM Policies:</strong> Principle of Least Privilege</li>
+<li><strong>Monitoring:</strong> Continuous auditing via CloudTrail &amp; GuardDuty</li>
+</ul>
+<hr>
+<h2 id="9-conclusion">9. Conclusion</h2>
+<p>The <strong>Urban Railway Service System on AWS</strong> serves as a strategic foundation for digital transformation in Ho Chi Minh City’s public transportation sector.<br>
+With a <strong>serverless, event-driven, and CI/CD automated architecture</strong>, this solution meets modern requirements for <strong>security, performance, and cost efficiency</strong>.<br>
+Beyond technology, it is a key step toward a <strong>smart city future</strong>.</p>
+<hr>
+<h2 id="10-success-metrics">10. Success Metrics</h2>
+<table>
+  <thead>
+      <tr>
+          <th>KPI</th>
+          <th>Target</th>
+          <th>Measurement Tool</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>System Availability</td>
+          <td>≥ 99.95%</td>
+          <td>CloudWatch uptime metrics</td>
+      </tr>
+      <tr>
+          <td>API Latency</td>
+          <td>&lt; 300 ms</td>
+          <td>CloudWatch logs</td>
+      </tr>
+      <tr>
+          <td>Ticket Processing</td>
+          <td>10,000+/day</td>
+          <td>Lambda invocation count</td>
+      </tr>
+      <tr>
+          <td>Cost Optimization</td>
+          <td>&lt; $100/month</td>
+          <td>AWS Cost Explorer</td>
+      </tr>
+      <tr>
+          <td>Security Compliance</td>
+          <td>100%</td>
+          <td>GuardDuty &amp; IAM Audit</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="appendix-a--aws-services-summary">Appendix A — AWS Services Summary</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Category</th>
+          <th>Services Used</th>
+          <th>Purpose</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Networking</td>
+          <td>Route 53, CloudFront</td>
+          <td>DNS, CDN, HTTPS</td>
+      </tr>
+      <tr>
+          <td>Compute</td>
+          <td>Lambda</td>
+          <td>Serverless compute</td>
+      </tr>
+      <tr>
+          <td>API</td>
+          <td>API Gateway</td>
+          <td>REST API endpoints</td>
+      </tr>
+      <tr>
+          <td>Database</td>
+          <td>RDS (SQL Server)</td>
+          <td>Transactional data</td>
+      </tr>
+      <tr>
+          <td>Storage</td>
+          <td>S3 + Glacier</td>
+          <td>File storage &amp; archival</td>
+      </tr>
+      <tr>
+          <td>Security</td>
+          <td>Cognito, WAF, KMS, Secrets Manager</td>
+          <td>Authentication &amp; protection</td>
+      </tr>
+      <tr>
+          <td>DevOps</td>
+          <td>CodePipeline, CodeBuild, CodeDeploy</td>
+          <td>CI/CD automation</td>
+      </tr>
+      <tr>
+          <td>Monitoring</td>
+          <td>CloudWatch, CloudTrail, GuardDuty</td>
+          <td>Observability &amp; compliance</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p>🖼️ <em>Illustration:</em><br>
+<img src="../images/2-Proposal/aws_metropolitano_train_service.drawio.png" alt="AWS Architecture Diagram"></p>
 
 
 
@@ -1930,19 +2239,19 @@ This architecture not only supports current ticketing and scheduling needs but a
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1762234407"></script>
-    <script src="../js/perfect-scrollbar.min.js?1762234407"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1762234407"></script>
-    <script src="../js/jquery.sticky.js?1762234407"></script>
-    <script src="../js/featherlight.min.js?1762234407"></script>
-    <script src="../js/highlight.pack.js?1762234407"></script>
+    <script src="../js/clipboard.min.js?1762355749"></script>
+    <script src="../js/perfect-scrollbar.min.js?1762355749"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1762355749"></script>
+    <script src="../js/jquery.sticky.js?1762355749"></script>
+    <script src="../js/featherlight.min.js?1762355749"></script>
+    <script src="../js/highlight.pack.js?1762355749"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom-3.6.0.js?1762234407"></script>
-    <script src="../js/learn.js?1762234407"></script>
-    <script src="../js/hugo-learn.js?1762234407"></script>
+    <script src="../js/modernizr.custom-3.6.0.js?1762355749"></script>
+    <script src="../js/learn.js?1762355749"></script>
+    <script src="../js/hugo-learn.js?1762355749"></script>
 
-    <link href="../mermaid/mermaid.css?1762234407" rel="stylesheet" />
-    <script src="../mermaid/mermaid.js?1762234407"></script>
+    <link href="../mermaid/mermaid.css?1762355749" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js?1762355749"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
