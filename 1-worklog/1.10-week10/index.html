@@ -15,21 +15,21 @@
     <title>Week 10 Worklog :: Internship Report</title>
 
     
-    <link href="../../css/nucleus.css?1762961463" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1762961463" rel="stylesheet">
-    <link href="../../css/hybrid.css?1762961463" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1762961463" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1762961463" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1762961463" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1762961463" rel="stylesheet">
-    <link href="../../css/theme.css?1762961463" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1762961463" rel="stylesheet">
+    <link href="../../css/nucleus.css?1763311626" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1763311626" rel="stylesheet">
+    <link href="../../css/hybrid.css?1763311626" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1763311626" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1763311626" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1763311626" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1763311626" rel="stylesheet">
+    <link href="../../css/theme.css?1763311626" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1763311626" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1762961463" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1763311626" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1762961463"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1763311626"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1762961463"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1762961463"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1763311626"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1763311626"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1762961463"></script>
+<script type="text/javascript" src="../../js/search.js?1763311626"></script>
  
   </div>
 
@@ -1019,8 +1019,11 @@
 
 	<h3 id="week-10-objectives">Week 10 Objectives:</h3>
 <ul>
-<li>Connect and get acquainted with members of First Cloud Journey.</li>
-<li>Understand basic AWS services, how to use the console &amp; CLI.</li>
+<li>Practice with AWS core services (VPC, EC2, EBS, Postgres)</li>
+<li>Learn AWS SageMaker for AI/ML workflow</li>
+<li>Practice AI/ML data analysis with SageMaker</li>
+<li>Learn AWS Bedrock AgentCore components</li>
+<li>Learn AWS Glue and Amazon Athena for ETL and analytics</li>
 </ul>
 <h3 id="tasks-to-be-carried-out-this-week">Tasks to be carried out this week:</h3>
 <table>
@@ -1036,84 +1039,99 @@
   <tbody>
       <tr>
           <td>2</td>
-          <td>- <strong>Practice:</strong> <br>  + Creating VPCs <br>  + Initializing EC2 instances <br>  + Creating an EBS volume <br>  + Assigning EBS volume <br>  Installing Postgres <br>  Mount EBS EC2 production <br>  + Postgres backup <br>  + Mount EBS EC2 test <br>  + Data recovery</td>
+          <td>- <strong>Practice:</strong> <br>  + Creating VPCs <br>  + Initializing EC2 instances <br>  + Creating an EBS volume <br>  + Assigning EBS volume <br>  Installing Postgres <br>  Mount EBS EC2 production <br>  + Postgres backup <br>  Mount EBS EC2 test <br>  + Data recovery</td>
           <td>08/11/2025</td>
           <td>10/11/2025</td>
           <td></td>
       </tr>
       <tr>
           <td>3</td>
-          <td>- Learn AWS SageMaker AI:<br>  + What is SageMaker <br>  + The component <br>  + End-to-End Workflow</td>
+          <td>- Learn <strong>AWS SageMaker AI</strong>:<br>  + What is SageMaker <br>  + The component <br>  + End-to-End Workflow</td>
           <td>10/11/2025</td>
           <td>12/11/2025</td>
           <td><a href="https://000200.awsstudygroup.com/">https://000200.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>4</td>
-          <td>- <strong>Practice:</strong> Use Amazon SageMaker AI to create analyze the data, import file excel, choose the data types and export to the file include the analyze charts</td>
+          <td>- <strong>Practice:</strong> Use Amazon SageMaker AI to analyze data, import Excel files, choose data types and export results including charts</td>
           <td>10/11/2025</td>
           <td>12/11/2025</td>
           <td><a href="https://000200.awsstudygroup.com/">https://000200.awsstudygroup.com/</a></td>
       </tr>
       <tr>
           <td>5</td>
-          <td>- Learn basic EC2: <br>  + Instance types <br>  + AMI <br>  + EBS <br>  + &hellip; <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br></td>
-          <td>08/14/2025</td>
-          <td>08/15/2025</td>
-          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
+          <td>- Learn <strong>AWS Bedrock AgentCore</strong>:<br>  + Identity <br>  + Memory <br>  + Code Interpreter <br>  + Browser <br>  + Gateway <br>  + Observability <br>  + Common use cases: Equip agents with built-in tools and capabilities, Deploy securely at scale, Test and monitor agents</td>
+          <td>12/11/2025</td>
+          <td>14/11/2025</td>
+          <td><a href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html">https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html</a></td>
       </tr>
       <tr>
           <td>6</td>
-          <td>- <strong>Practice:</strong> <br>  + Launch an EC2 instance <br>  + Connect via SSH <br>  + Attach an EBS volume</td>
-          <td>08/15/2025</td>
-          <td>08/15/2025</td>
-          <td><a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/</a></td>
+          <td>- Learn <strong>AWS Glue</strong> and <strong>Amazon Athena</strong></td>
+          <td>14/11/2025</td>
+          <td>16/11/2025</td>
+          <td><a href="https://000040.awsstudygroup.com/">https://000040.awsstudygroup.com/</a></td>
       </tr>
   </tbody>
 </table>
 <h3 id="week-10-achievements">Week 10 Achievements:</h3>
 <ul>
 <li>
-<p>Understood what AWS is and mastered the basic service groups:</p>
+<p><strong>AWS Core Services Practice:</strong></p>
 <ul>
-<li>Compute</li>
-<li>Storage</li>
-<li>Networking</li>
-<li>Database</li>
-<li>&hellip;</li>
+<li>Created VPCs with proper subnets, route tables, and Internet Gateways.</li>
+<li>Launched EC2 instances for production and test environments.</li>
+<li>Created and attached EBS volumes to EC2 instances.</li>
+<li>Installed and configured PostgreSQL on EC2 instances.</li>
+<li>Mounted EBS volumes on both production and test instances.</li>
+<li>Performed PostgreSQL backup and data recovery successfully.</li>
 </ul>
 </li>
 <li>
-<p>Successfully created and configured an AWS Free Tier account.</p>
-</li>
-<li>
-<p>Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.</p>
-</li>
-<li>
-<p>Installed and configured AWS CLI on the computer, including:</p>
+<p><strong>AWS SageMaker AI Learning &amp; Practice:</strong></p>
 <ul>
-<li>Access Key</li>
-<li>Secret Key</li>
-<li>Default Region</li>
-<li>&hellip;</li>
+<li>Understood SageMaker components: Notebook, Training, Endpoint, Model, Pipelines.</li>
+<li>Completed end-to-end AI/ML workflow: imported Excel datasets, analyzed data, visualized charts.</li>
+<li>Learned to choose proper data types, clean data, and export results for further use.</li>
 </ul>
 </li>
 <li>
-<p>Used AWS CLI to perform basic operations such as:</p>
+<p><strong>AWS Bedrock AgentCore Learning:</strong></p>
 <ul>
-<li>Check account &amp; configuration information</li>
-<li>Retrieve the list of regions</li>
-<li>View EC2 service</li>
-<li>Create and manage key pairs</li>
-<li>Check information about running services</li>
-<li>&hellip;</li>
+<li>Learned core components: Identity, Memory, Code Interpreter, Browser, Gateway, Observability.</li>
+<li>Explored common use cases:
+<ul>
+<li>Equipping agents with built-in tools and capabilities.</li>
+<li>Deploying agents securely at scale.</li>
+<li>Monitoring and testing agents in real scenarios.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
-<p>Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.</p>
+<p><strong>AWS Glue &amp; Amazon Athena Learning:</strong></p>
+<ul>
+<li>Practiced building ETL pipelines using AWS Glue.</li>
+<li>Learned to catalog datasets and transform data for analytics.</li>
+<li>Queried S3 data using Amazon Athena and verified results.</li>
+<li>Connected Athena queries to QuickSight dashboards for reporting and visualization.</li>
+</ul>
 </li>
 <li>
-<p>&hellip;</p>
+<p><strong>AWS CLI &amp; Management Console Proficiency:</strong></p>
+<ul>
+<li>Configured AWS CLI with Access Key, Secret Key, and Default Region.</li>
+<li>Used CLI to retrieve regions, list services, and check configurations.</li>
+<li>Managed AWS resources via CLI and Web Console interchangeably.</li>
+</ul>
+</li>
+<li>
+<p><strong>General Achievements:</strong></p>
+<ul>
+<li>Gained hands-on experience across multiple AWS services.</li>
+<li>Developed confidence in connecting different services into functional workflows.</li>
+<li>Able to combine compute, storage, networking, database, AI/ML, ETL, and analytics services in practical exercises.</li>
+</ul>
 </li>
 </ul>
 
@@ -1817,19 +1835,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1762961463"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1762961463"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1762961463"></script>
-    <script src="../../js/jquery.sticky.js?1762961463"></script>
-    <script src="../../js/featherlight.min.js?1762961463"></script>
-    <script src="../../js/highlight.pack.js?1762961463"></script>
+    <script src="../../js/clipboard.min.js?1763311626"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1763311626"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1763311626"></script>
+    <script src="../../js/jquery.sticky.js?1763311626"></script>
+    <script src="../../js/featherlight.min.js?1763311626"></script>
+    <script src="../../js/highlight.pack.js?1763311626"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1762961463"></script>
-    <script src="../../js/learn.js?1762961463"></script>
-    <script src="../../js/hugo-learn.js?1762961463"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1763311626"></script>
+    <script src="../../js/learn.js?1763311626"></script>
+    <script src="../../js/hugo-learn.js?1763311626"></script>
 
-    <link href="../../mermaid/mermaid.css?1762961463" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1762961463"></script>
+    <link href="../../mermaid/mermaid.css?1763311626" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1763311626"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

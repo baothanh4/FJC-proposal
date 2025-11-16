@@ -15,19 +15,6 @@
                 href="https://thienluhoan.github.io/workshop-template/vi/"
                 />
   </url><url>
-    <loc>https://thienluhoan.github.io/workshop-template/vi/1-worklog/1.8-week8/</loc>
-    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://thienluhoan.github.io/workshop-template/1-worklog/1.8-week8/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://thienluhoan.github.io/workshop-template/vi/1-worklog/1.8-week8/"
-                />
-  </url><url>
     <loc>https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/3.1-blog1/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -184,19 +171,6 @@
                 href="https://thienluhoan.github.io/workshop-template/vi/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/"
                 />
   </url><url>
-    <loc>https://thienluhoan.github.io/workshop-template/vi/1-worklog/1.9-week9/</loc>
-    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://thienluhoan.github.io/workshop-template/1-worklog/1.9-week9/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://thienluhoan.github.io/workshop-template/vi/1-worklog/1.9-week9/"
-                />
-  </url><url>
     <loc>https://thienluhoan.github.io/workshop-template/vi/1-worklog/1.1-week1/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -286,6 +260,32 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://thienluhoan.github.io/workshop-template/vi/1-worklog/1.7-week7/"
+                />
+  </url><url>
+    <loc>https://thienluhoan.github.io/workshop-template/vi/1-worklog/1.8-week8/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://thienluhoan.github.io/workshop-template/1-worklog/1.8-week8/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://thienluhoan.github.io/workshop-template/vi/1-worklog/1.8-week8/"
+                />
+  </url><url>
+    <loc>https://thienluhoan.github.io/workshop-template/vi/1-worklog/1.9-week9/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://thienluhoan.github.io/workshop-template/1-worklog/1.9-week9/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://thienluhoan.github.io/workshop-template/vi/1-worklog/1.9-week9/"
                 />
   </url><url>
     <loc>https://thienluhoan.github.io/workshop-template/vi/5-workshop/5.2-prerequiste/</loc>
