@@ -15,21 +15,21 @@
     <title>Proposal :: Báo cáo thực tập</title>
 
     
-    <link href="../../css/nucleus.css?1763311626" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1763311626" rel="stylesheet">
-    <link href="../../css/hybrid.css?1763311626" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1763311626" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1763311626" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1763311626" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1763311626" rel="stylesheet">
-    <link href="../../css/theme.css?1763311626" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1763311626" rel="stylesheet">
+    <link href="../../css/nucleus.css?1763435541" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1763435541" rel="stylesheet">
+    <link href="../../css/hybrid.css?1763435541" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1763435541" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1763435541" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1763435541" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1763435541" rel="stylesheet">
+    <link href="../../css/theme.css?1763435541" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1763435541" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1763311626" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1763435541" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1763311626"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1763435541"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1763311626"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1763311626"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1763435541"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1763435541"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1763311626"></script>
+<script type="text/javascript" src="../../js/search.js?1763435541"></script>
  
   </div>
 
@@ -349,7 +349,7 @@
         "
 >
   <a href="../../vi/2-proposal/">
-     <b> 2. </b> Proposal 
+    <b> 2. </b>Proposal 
     <i class="fas fa-check read-icon"></i>
     
   </a>
@@ -980,45 +980,55 @@
                     <div class="progress">
   <div class="wrapper"><nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#kiến-trúc-đám-mây-an-toàn--mở-rộng--tối-ưu-chi-phí">Kiến Trúc Đám Mây An Toàn — Mở Rộng — Tối Ưu Chi Phí</a></li>
-      </ul>
-    </li>
     <li><a href="#executive-summary">Executive Summary</a></li>
     <li><a href="#key-highlights">Key Highlights</a></li>
-    <li><a href="#1-mục-tiêu-dự-án">1. Mục Tiêu Dự Án</a></li>
-    <li><a href="#2-phạm-vi-dự-án">2. Phạm Vi Dự Án</a>
+  </ul>
+
+  <ul>
+    <li>
       <ul>
-        <li><a href="#21-functional-requirements">2.1 Functional Requirements</a></li>
-        <li><a href="#22-non-functional-requirements">2.2 Non-Functional Requirements</a></li>
+        <li><a href="#primary-objective">Primary Objective</a></li>
+        <li><a href="#specific-objectives">Specific Objectives</a></li>
       </ul>
     </li>
-    <li><a href="#3-kiến-trúc-aws-đề-xuất">3. Kiến Trúc AWS Đề Xuất</a>
+  </ul>
+
+  <ul>
+    <li><a href="#31-architecture-overview">3.1 Architecture Overview</a></li>
+    <li><a href="#32-networking--access-layer">3.2 Networking &amp; Access Layer</a></li>
+    <li><a href="#33-application-layer--microservices-on-ecs-fargate">3.3 Application Layer — Microservices on ECS Fargate</a>
       <ul>
-        <li><a href="#31-tổng-quan">3.1 Tổng Quan</a></li>
-        <li><a href="#architecture-diagram-summary">Architecture Diagram Summary</a></li>
-        <li><a href="#32-lớp-mạng--truy-cập">3.2 Lớp Mạng &amp; Truy Cập</a></li>
-        <li><a href="#33-lớp-ứng-dụng--api">3.3 Lớp Ứng Dụng &amp; API</a></li>
-        <li><a href="#34-lớp-dữ-liệu--lưu-trữ">3.4 Lớp Dữ Liệu &amp; Lưu Trữ</a></li>
-        <li><a href="#35-lớp-bảo-mật--xác-thực">3.5 Lớp Bảo Mật &amp; Xác Thực</a></li>
-        <li><a href="#36-lớp-giám-sát--tuân-thủ">3.6 Lớp Giám Sát &amp; Tuân Thủ</a></li>
-        <li><a href="#37-lớp-cicd--tự-động-hóa">3.7 Lớp CI/CD &amp; Tự Động Hóa</a></li>
-        <li><a href="#data-flow-simplified">Data Flow (Simplified)</a></li>
+        <li><a href="#why-fargate">Why Fargate?</a></li>
+        <li><a href="#microservices">Microservices</a></li>
       </ul>
     </li>
-    <li><a href="#4-kế-hoạch-triển-khai">4. Kế Hoạch Triển Khai</a></li>
-    <li><a href="#5-ngân-sách--nhân-sự">5. Ngân Sách &amp; Nhân Sự</a></li>
-    <li><a href="#6-kết-quả-kỳ-vọng">6. Kết Quả Kỳ Vọng</a></li>
-    <li><a href="#7-rủi-ro--giải-pháp">7. Rủi Ro &amp; Giải Pháp</a>
+    <li><a href="#34-data-layer">3.4 Data Layer</a>
       <ul>
-        <li><a href="#71-risk-classification-matrix">7.1 Risk Classification Matrix</a></li>
+        <li><a href="#amazon-rds-sql-server">Amazon RDS (SQL Server)</a></li>
+        <li><a href="#elasticache-redis">ElastiCache Redis</a></li>
+        <li><a href="#amazon-s3">Amazon S3</a></li>
       </ul>
     </li>
-    <li><a href="#8-tuân-thủ--bảo-mật">8. Tuân Thủ &amp; Bảo Mật</a></li>
-    <li><a href="#9-kết-luận">9. Kết Luận</a></li>
-    <li><a href="#10-success-metrics">10. Success Metrics</a></li>
-    <li><a href="#appendix-a--aws-services-summary">Appendix A — AWS Services Summary</a></li>
+    <li><a href="#35-event--messaging-layer">3.5 Event &amp; Messaging Layer</a>
+      <ul>
+        <li><a href="#amazon-eventbridge">Amazon EventBridge</a></li>
+        <li><a href="#amazon-sqs">Amazon SQS</a></li>
+        <li><a href="#amazon-sns">Amazon SNS</a></li>
+      </ul>
+    </li>
+    <li><a href="#36-real-time-analytics">3.6 Real-Time Analytics</a>
+      <ul>
+        <li><a href="#kinesis-data-streams">Kinesis Data Streams</a></li>
+        <li><a href="#quicksight">QuickSight</a></li>
+        <li><a href="#sagemaker">SageMaker</a></li>
+      </ul>
+    </li>
+    <li><a href="#37-monitoring--observability">3.7 Monitoring &amp; Observability</a></li>
+    <li><a href="#38-cicd-pipeline">3.8 CI/CD Pipeline</a>
+      <ul>
+        <li><a href="#features">Features:</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
 </div>
@@ -1043,502 +1053,327 @@
 
 
 
-	<h1 id="hệ-thống-dịch-vụ-đường-sắt-đô-thị-trên-aws">HỆ THỐNG DỊCH VỤ ĐƯỜNG SẮT ĐÔ THỊ TRÊN AWS</h1>
-<h3 id="kiến-trúc-đám-mây-an-toàn--mở-rộng--tối-ưu-chi-phí">Kiến Trúc Đám Mây An Toàn — Mở Rộng — Tối Ưu Chi Phí</h3>
+	<h1 id="urban-rail-transit-service-system-on-aws">URBAN RAIL TRANSIT SERVICE SYSTEM ON AWS</h1>
 <hr>
 <h2 id="executive-summary">Executive Summary</h2>
-<p>Thành phố Hồ Chí Minh đang đối mặt với các thách thức lớn về giao thông, bao gồm tắc nghẽn, ô nhiễm và áp lực dân số đô thị hóa.<br>
-Dự án <strong>Đường sắt Đô thị</strong> được xem là bước đột phá trong việc xây dựng hệ thống giao thông thông minh, bền vững và thân thiện với môi trường.</p>
-<p>Bản đề xuất này trình bày một <strong>kiến trúc đám mây toàn diện dựa trên AWS</strong>, được thiết kế để hỗ trợ các chức năng cốt lõi như:</p>
+<p>Rapid urban development has increased the need for intelligent and sustainable public transportation. A modern Urban Rail Transit System requires a reliable, scalable, and highly available digital platform operating 24/7.</p>
+<p>This proposal presents an <strong>AWS microservices architecture using Amazon ECS Fargate</strong>, enabling:</p>
 <ul>
-<li>Đặt vé điện tử &amp; thanh toán không tiền mặt</li>
-<li>Quản lý lịch trình và giám sát vận hành</li>
-<li>Phân tích dữ liệu và tối ưu lưu lượng hành khách</li>
-</ul>
-<p>Kiến trúc tuân thủ các nguyên tắc <strong>serverless, event-driven, và CI/CD automation</strong>, bảo đảm:</p>
-<ul>
-<li>Hiệu suất và khả năng mở rộng linh hoạt.</li>
-<li>Bảo mật đầu-cuối đạt tiêu chuẩn doanh nghiệp.</li>
-<li>Chi phí vận hành tối ưu theo mô hình pay-as-you-go.</li>
+<li>Ticket booking, scheduling, payments, and traffic monitoring</li>
+<li>Real-time passenger data ingestion through Amazon Kinesis</li>
+<li>BI dashboards and predictive analytics with QuickSight and SageMaker</li>
+<li>Full CI/CD automation and comprehensive monitoring</li>
 </ul>
 <hr>
 <h2 id="key-highlights">Key Highlights</h2>
 <ul>
-<li>100% cloud-native &amp; serverless architecture (AWS Lambda, EventBridge)</li>
-<li>End-to-end enterprise security (Cognito, WAF, KMS)</li>
-<li>Fully automated CI/CD &amp; observability (CodePipeline, CloudWatch)</li>
-<li>Seamless e-ticketing &amp; cashless payment (VNPay, MoMo)</li>
-<li>Real-time analytics &amp; predictive insights (Athena, QuickSight)</li>
+<li><strong>Microservices container architecture</strong> powered by Amazon ECS Fargate</li>
+<li>End-to-end security: Route53 → CloudFront → WAF → ALB → Private Subnets</li>
+<li>Fully automated CI/CD using CodePipeline, CodeBuild, CodeDeploy, ECR</li>
+<li>Real-time processing using <strong>Kinesis Data Streams</strong></li>
+<li>Analytics &amp; forecasting with <strong>QuickSight + SageMaker</strong></li>
+<li>Scalability for hundreds of thousands of daily ticket requests</li>
 </ul>
 <hr>
-<h2 id="1-mục-tiêu-dự-án">1. Mục Tiêu Dự Án</h2>
-<p><strong>Mục tiêu tổng quát:</strong><br>
-Xây dựng hạ tầng kỹ thuật số đáng tin cậy, an toàn, và có khả năng mở rộng cho hệ thống Đường sắt Đô thị TP. Hồ Chí Minh trên nền tảng AWS Cloud.</p>
-<p><strong>Mục tiêu cụ thể:</strong></p>
+<h1 id="1-project-objectives">1. Project Objectives</h1>
+<h3 id="primary-objective">Primary Objective</h3>
+<p>Build a digital platform for the Urban Rail Transit System with scalability, security, and long-term operational stability.</p>
+<h3 id="specific-objectives">Specific Objectives</h3>
 <ul>
-<li>Triển khai kiến trúc <strong>serverless &amp; event-driven</strong> sử dụng AWS Lambda và EventBridge.</li>
-<li>Cung cấp các tính năng <strong>đặt vé, thanh toán, xác thực và cập nhật lịch trình thời gian thực</strong>.</li>
-<li>Áp dụng <strong>bảo mật đầu-cuối</strong> (WAF, Cognito, KMS, Secrets Manager).</li>
-<li>Tự động hóa CI/CD với <strong>CodePipeline, CodeBuild, CodeDeploy</strong>.</li>
-<li>Thiết lập <strong>giám sát và tuân thủ</strong> qua CloudWatch, CloudTrail.</li>
+<li>Implement ticketing, scheduling, payment, and notification services as microservices</li>
+<li>Enable automated operations and system-wide monitoring</li>
+<li>Establish a full CI/CD pipeline with zero downtime</li>
+<li>Support real-time passenger data ingestion and analytics</li>
+<li>Provide multi-AZ architecture with ≥ 99.95% system availability</li>
 </ul>
 <hr>
-<h2 id="2-phạm-vi-dự-án">2. Phạm Vi Dự Án</h2>
+<h1 id="2-project-scope">2. Project Scope</h1>
 <table>
   <thead>
       <tr>
-          <th>Thành phần</th>
-          <th>Mô tả</th>
+          <th>Component</th>
+          <th>Description</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td><strong>Địa điểm</strong></td>
-          <td>Tuyến Metro số 1 (Bến Thành – Suối Tiên), TP.HCM</td>
+          <td>Region</td>
+          <td>AWS Singapore (ap-southeast-1)</td>
       </tr>
       <tr>
-          <td><strong>Người dùng mục tiêu</strong></td>
-          <td>Hành khách, nhân viên vận hành, quản trị viên</td>
+          <td>Users</td>
+          <td>Passengers, operators, administrators</td>
       </tr>
       <tr>
-          <td><strong>Thời gian triển khai</strong></td>
-          <td>12 năm (bao gồm triển khai &amp; vận hành dài hạn)</td>
+          <td>Architecture Style</td>
+          <td>Microservices on ECS Fargate</td>
       </tr>
       <tr>
-          <td><strong>Giai đoạn 1</strong></td>
-          <td>Đặt vé, xác thực, lịch trình, thanh toán</td>
+          <td>Phase 1</td>
+          <td>Ticketing, scheduling, notifications</td>
       </tr>
       <tr>
-          <td><strong>Giai đoạn mở rộng</strong></td>
-          <td>Phân tích dự đoán, IoT giám sát, tối ưu hành khách</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h3 id="21-functional-requirements">2.1 Functional Requirements</h3>
-<table>
-  <thead>
-      <tr>
-          <th>ID</th>
-          <th>Requirement</th>
-          <th>Priority</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>FR-01</td>
-          <td>Users can book tickets and pay online</td>
-          <td>High</td>
-      </tr>
-      <tr>
-          <td>FR-02</td>
-          <td>Real-time schedule updates via API</td>
-          <td>High</td>
-      </tr>
-      <tr>
-          <td>FR-03</td>
-          <td>Automatic maintenance alerting</td>
-          <td>Medium</td>
-      </tr>
-      <tr>
-          <td>FR-04</td>
-          <td>Admin can view passenger analytics</td>
-          <td>Medium</td>
-      </tr>
-      <tr>
-          <td>FR-05</td>
-          <td>Multi-language (EN, VN) support</td>
-          <td>Low</td>
+          <td>Phase 2</td>
+          <td>Analytics, BI dashboards, AI forecasting</td>
       </tr>
   </tbody>
 </table>
 <hr>
-<h3 id="22-non-functional-requirements">2.2 Non-Functional Requirements</h3>
+<h1 id="3-proposed-aws-architecture">3. Proposed AWS Architecture</h1>
+<h2 id="31-architecture-overview">3.1 Architecture Overview</h2>
+<p>A <strong>multi-tier microservices architecture</strong> will be deployed, including:</p>
 <ul>
-<li><strong>Availability:</strong> ≥ 99.95% uptime (Multi-AZ)</li>
-<li><strong>Latency:</strong> &lt; 300 ms for booking operations</li>
-<li><strong>Security:</strong> Compliance with ISO 27001 &amp; SOC 2 Type II</li>
-<li><strong>Scalability:</strong> Auto scale to 100k concurrent users</li>
-<li><strong>Cost Efficiency:</strong> ≤ $100/month base infrastructure</li>
+<li><strong>Edge Layer:</strong> Route53, CloudFront, AWS WAF</li>
+<li><strong>Application Layer:</strong> ALB → ECS Fargate → ECR</li>
+<li><strong>Data Layer:</strong> RDS SQL Server, ElastiCache Redis</li>
+<li><strong>Event Layer:</strong> EventBridge, SNS, SQS</li>
+<li><strong>Analytics Layer:</strong> Kinesis → S3 → QuickSight → SageMaker</li>
+<li><strong>Monitoring Layer:</strong> CloudWatch, CloudTrail</li>
+<li><strong>CI/CD Layer:</strong> CodePipeline, CodeBuild, CodeDeploy</li>
 </ul>
 <hr>
-<h2 id="3-kiến-trúc-aws-đề-xuất">3. Kiến Trúc AWS Đề Xuất</h2>
-<h3 id="31-tổng-quan">3.1 Tổng Quan</h3>
-<p>Hệ thống được xây dựng theo <strong>mô hình đa lớp (multi-tier)</strong>, <strong>phi máy chủ (serverless)</strong>, và <strong>tự động (automated)</strong>, đảm bảo khả năng mở rộng động, vận hành tin cậy và bảo mật toàn diện.</p>
+<h2 id="32-networking--access-layer">3.2 Networking &amp; Access Layer</h2>
+<ul>
+<li><strong>Route 53:</strong> Global DNS routing</li>
+<li><strong>CloudFront:</strong> CDN caching and low-latency access</li>
+<li><strong>AWS WAF:</strong> Protection from DDoS, SQL injection, XSS</li>
+<li><strong>Application Load Balancer:</strong> Routes traffic to microservices</li>
+</ul>
+<p><strong>Traffic Flow:</strong><br>
+<strong>User → Route53 → CloudFront → WAF → ALB → Private Subnet → ECS Fargate</strong></p>
 <hr>
-<h3 id="architecture-diagram-summary">Architecture Diagram Summary</h3>
+<h2 id="33-application-layer--microservices-on-ecs-fargate">3.3 Application Layer — Microservices on ECS Fargate</h2>
+<h3 id="why-fargate">Why Fargate?</h3>
+<ul>
+<li>No server management</li>
+<li>Autoscaling based on CPU/Memory</li>
+<li>High security in private subnets</li>
+</ul>
+<h3 id="microservices">Microservices</h3>
+<ul>
+<li>Booking Service</li>
+<li>Schedule Service</li>
+<li>Payment Service</li>
+<li>Notification Service</li>
+<li>User Service</li>
+<li>Staff &amp; Operation Service</li>
+</ul>
+<p><strong>Docker Images</strong> stored in <strong>Amazon ECR</strong></p>
+<hr>
+<h2 id="34-data-layer">3.4 Data Layer</h2>
+<h3 id="amazon-rds-sql-server">Amazon RDS (SQL Server)</h3>
+<ul>
+<li>Stores tickets, schedules, user accounts, payments</li>
+<li>Multi-AZ high availability</li>
+<li>Automated backup and failover</li>
+</ul>
+<h3 id="elasticache-redis">ElastiCache Redis</h3>
+<ul>
+<li>Cache schedules → reduce RDS load</li>
+<li>Increase API performance up to 10×</li>
+</ul>
+<h3 id="amazon-s3">Amazon S3</h3>
+<ul>
+<li>Stores reports, invoices, files</li>
+<li>Destination for streaming data from Kinesis</li>
+</ul>
+<hr>
+<h2 id="35-event--messaging-layer">3.5 Event &amp; Messaging Layer</h2>
+<h3 id="amazon-eventbridge">Amazon EventBridge</h3>
+<p>Automates workflows, including:</p>
+<ul>
+<li>PaymentSuccess → CreateInvoice → NotifyUser</li>
+<li>ScheduleUpdate → BroadcastToMobile</li>
+</ul>
+<h3 id="amazon-sqs">Amazon SQS</h3>
+<ul>
+<li>Queue system for notifications and ticket processing</li>
+<li>Protects services during traffic spikes</li>
+</ul>
+<h3 id="amazon-sns">Amazon SNS</h3>
+<ul>
+<li>Sends SMS, email, and push notifications</li>
+</ul>
+<hr>
+<h2 id="36-real-time-analytics">3.6 Real-Time Analytics</h2>
+<h3 id="kinesis-data-streams">Kinesis Data Streams</h3>
+<ul>
+<li>Ingests passenger traffic in real time</li>
+<li>Application logs → Kinesis → S3</li>
+</ul>
+<h3 id="quicksight">QuickSight</h3>
+<ul>
+<li>Dashboards for daily sales, station load, peak hours</li>
+</ul>
+<h3 id="sagemaker">SageMaker</h3>
+<ul>
+<li>Predict passenger demand</li>
+<li>Optimize train frequencies during peak hours</li>
+</ul>
+<hr>
+<h2 id="37-monitoring--observability">3.7 Monitoring &amp; Observability</h2>
+<ul>
+<li><strong>CloudWatch Metrics:</strong> CPU, Memory, ALB latency</li>
+<li><strong>CloudWatch Logs:</strong> Fargate application logs</li>
+<li><strong>SNS Alerts:</strong> Error notifications</li>
+<li><strong>CloudTrail:</strong> Governance &amp; admin activity tracking</li>
+</ul>
+<hr>
+<h2 id="38-cicd-pipeline">3.8 CI/CD Pipeline</h2>
+<p>Developer Commit<br>
+→ CodePipeline<br>
+→ CodeBuild<br>
+→ Build Docker Image<br>
+→ ECR<br>
+→ CodeDeploy<br>
+→ ECS Fargate</p>
+<h3 id="features">Features:</h3>
+<ul>
+<li>Rolling deployments with <strong>zero downtime</strong></li>
+<li>ALB health checks</li>
+<li>Automatic rollback on failure</li>
+</ul>
+<hr>
+<h1 id="4-deployment-plan">4. Deployment Plan</h1>
 <table>
   <thead>
       <tr>
-          <th>Layer</th>
-          <th>Service</th>
-          <th>Role</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Frontend</strong></td>
-          <td>CloudFront + S3</td>
-          <td>Static hosting, caching, HTTPS delivery</td>
-      </tr>
-      <tr>
-          <td><strong>API Layer</strong></td>
-          <td>API Gateway + Lambda</td>
-          <td>Business logic, event-driven functions</td>
-      </tr>
-      <tr>
-          <td><strong>Data</strong></td>
-          <td>RDS + S3 + DynamoDB</td>
-          <td>Persistent and analytical data storage</td>
-      </tr>
-      <tr>
-          <td><strong>Security</strong></td>
-          <td>WAF + Cognito + KMS</td>
-          <td>Authentication, encryption, protection</td>
-      </tr>
-      <tr>
-          <td><strong>Monitoring</strong></td>
-          <td>CloudWatch + GuardDuty</td>
-          <td>Metrics, alerts, and anomaly detection</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h3 id="32-lớp-mạng--truy-cập">3.2 Lớp Mạng &amp; Truy Cập</h3>
-<ul>
-<li><strong>Amazon Route 53:</strong> Quản lý DNS, đảm bảo độ sẵn sàng toàn cầu.</li>
-<li><strong>Amazon CloudFront (CDN):</strong> Phân phối nội dung tĩnh và giảm tải backend.</li>
-<li><strong>AWS WAF:</strong> Bảo vệ trước các tấn công DDoS, SQL Injection, XSS.</li>
-</ul>
-<hr>
-<h3 id="33-lớp-ứng-dụng--api">3.3 Lớp Ứng Dụng &amp; API</h3>
-<ul>
-<li><strong>Amazon API Gateway:</strong> Cung cấp các endpoint RESTful bảo mật.</li>
-<li><strong>AWS Lambda:</strong> Xử lý logic nghiệp vụ chính:
-<ul>
-<li><code>BookingServiceLambda</code>: Xử lý đặt vé.</li>
-<li><code>PaymentLambda</code>: Tích hợp thanh toán VNPay/MoMo.</li>
-<li><code>ScheduleLambda</code>: Cập nhật lịch trình.</li>
-<li><code>NotificationLambda</code>: Gửi thông báo (SNS, email, SMS).</li>
-</ul>
-</li>
-<li><strong>Amazon EventBridge:</strong> Tự động điều phối quy trình (payment → invoice → notify).</li>
-</ul>
-<hr>
-<h3 id="34-lớp-dữ-liệu--lưu-trữ">3.4 Lớp Dữ Liệu &amp; Lưu Trữ</h3>
-<ul>
-<li><strong>Amazon RDS (SQL Server):</strong> Lưu trữ dữ liệu người dùng, vé, thanh toán.</li>
-<li><strong>Amazon S3:</strong> Lưu trữ file tĩnh, log, hóa đơn, dữ liệu sao lưu.
-<ul>
-<li>Tích hợp <strong>Lifecycle Policy → S3 Glacier</strong> để tiết kiệm chi phí.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h3 id="35-lớp-bảo-mật--xác-thực">3.5 Lớp Bảo Mật &amp; Xác Thực</h3>
-<ul>
-<li><strong>Amazon Cognito:</strong> Đăng ký, đăng nhập, MFA, cấp JWT token.</li>
-<li><strong>AWS Secrets Manager:</strong> Lưu trữ và xoay vòng khóa bí mật.</li>
-<li><strong>AWS KMS:</strong> Mã hóa dữ liệu RDS/S3.</li>
-<li><strong>AWS CloudTrail:</strong> Ghi nhật ký và giám sát API, đảm bảo compliance.</li>
-</ul>
-<hr>
-<h3 id="36-lớp-giám-sát--tuân-thủ">3.6 Lớp Giám Sát &amp; Tuân Thủ</h3>
-<ul>
-<li><strong>Amazon CloudWatch:</strong> Theo dõi hiệu suất và log Lambda/API.</li>
-<li><strong>CloudWatch Alarms + SNS:</strong> Gửi cảnh báo tự động.</li>
-<li><strong>CloudTrail:</strong> Theo dõi thay đổi hệ thống và hoạt động người dùng.</li>
-</ul>
-<hr>
-<h3 id="37-lớp-cicd--tự-động-hóa">3.7 Lớp CI/CD &amp; Tự Động Hóa</h3>
-<ul>
-<li><strong>AWS CodePipeline:</strong> Tự động build–test–deploy.</li>
-<li><strong>AWS CodeBuild:</strong> Kiểm thử mã backend/frontend mỗi lần commit.</li>
-<li><strong>AWS CodeDeploy:</strong> Triển khai an toàn, không downtime.</li>
-<li><strong>GitHub Webhook:</strong> Tự động kích hoạt pipeline sau commit.</li>
-</ul>
-<hr>
-<h3 id="data-flow-simplified">Data Flow (Simplified)</h3>
-<p>User -&gt; CloudFront -&gt;API Gateway -&gt; Lambda -&gt; RDS<br>
-|v
-EventBridge -&gt; SNS/Email Notification<br>
-|v
-CloudWatch -&gt; Admin Dashboard</p>
-<hr>
-<h2 id="4-kế-hoạch-triển-khai">4. Kế Hoạch Triển Khai</h2>
-<table>
-  <thead>
-      <tr>
-          <th>Giai đoạn</th>
-          <th>Thời gian</th>
-          <th>Hạng mục chính</th>
+          <th>Phase</th>
+          <th>Duration</th>
+          <th>Deliverables</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td>1</td>
-          <td>Tuần 1–2</td>
-          <td>Thiết lập Route 53, CloudFront, API Gateway, Lambda, RDS</td>
+          <td>1 week</td>
+          <td>Route53, CloudFront, WAF, VPC, ALB</td>
       </tr>
       <tr>
           <td>2</td>
-          <td>Tuần 3–4</td>
-          <td>Phát triển đặt vé, xác thực (Cognito, Lambda, EventBridge)</td>
+          <td>3 weeks</td>
+          <td>ECS, ECR, RDS, ElastiCache</td>
       </tr>
       <tr>
           <td>3</td>
-          <td>Tuần 5–6</td>
-          <td>Tích hợp thanh toán, giám sát CloudWatch, cấu hình WAF</td>
+          <td>1 week</td>
+          <td>EventBridge, SQS, SNS</td>
       </tr>
       <tr>
           <td>4</td>
-          <td>Tuần 7–8</td>
-          <td>CI/CD (CodePipeline, CodeBuild, CodeDeploy)</td>
+          <td>3 weeks</td>
+          <td>Kinesis, S3, QuickSight</td>
       </tr>
       <tr>
           <td>5</td>
-          <td>Mở rộng</td>
-          <td>Phân tích dữ liệu (Athena, QuickSight)</td>
+          <td>2 weeks</td>
+          <td>CI/CD Pipeline</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>2 weeks</td>
+          <td>Security hardening, cost tuning</td>
       </tr>
   </tbody>
 </table>
 <hr>
-<h2 id="5-ngân-sách--nhân-sự">5. Ngân Sách &amp; Nhân Sự</h2>
+<h1 id="5-estimated-monthly-operational-cost">5. Estimated Monthly Operational Cost</h1>
 <table>
   <thead>
       <tr>
-          <th>Thành phần</th>
-          <th>Dịch vụ</th>
-          <th>Ước tính (USD/tháng)</th>
+          <th>Service</th>
+          <th>Cost/Month</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>Mạng &amp; CDN</td>
-          <td>Route 53, CloudFront, WAF</td>
-          <td>$15</td>
+          <td>CloudFront + Route53 + WAF</td>
+          <td>$24</td>
       </tr>
       <tr>
-          <td>Backend Serverless</td>
-          <td>Lambda, API Gateway, EventBridge</td>
-          <td>$20</td>
+          <td>ECS Fargate</td>
+          <td>$40</td>
       </tr>
       <tr>
-          <td>Dữ liệu &amp; Lưu Trữ</td>
-          <td>RDS, S3</td>
-          <td>$35</td>
+          <td>RDS</td>
+          <td>$19</td>
+      </tr>
+      <tr>
+          <td>ElastiCache Redis</td>
+          <td>$73</td>
+      </tr>
+      <tr>
+          <td>S3 + Kinesis</td>
+          <td>$1</td>
+      </tr>
+      <tr>
+          <td>Monitoring</td>
+          <td>$37</td>
       </tr>
       <tr>
           <td>CI/CD</td>
-          <td>CodePipeline, CodeBuild, CodeDeploy</td>
-          <td>$10</td>
+          <td>$18</td>
       </tr>
       <tr>
-          <td>Bảo mật &amp; Giám sát</td>
-          <td>CloudWatch, CloudTrail, Cognito, KMS</td>
-          <td>$15</td>
-      </tr>
-      <tr>
-          <td><strong>Tổng cộng</strong></td>
-          <td>—</td>
-          <td><strong>≈ $95–100/tháng</strong></td>
+          <td><strong>Total Estimated Cost</strong></td>
+          <td><strong>$212</strong></td>
       </tr>
   </tbody>
 </table>
-<p><strong>Nhân sự:</strong></p>
+<hr>
+<h1 id="6-expected-outcomes">6. Expected Outcomes</h1>
 <ul>
-<li>Cloud Architect</li>
-<li>Backend Developer (Lambda, API Gateway)</li>
-<li>Frontend Developer (React, S3/CloudFront)</li>
-<li>DevOps Engineer (CI/CD &amp; Monitoring)</li>
-<li>Metro Operations Specialist</li>
+<li>Stable 24/7 rail transit operations</li>
+<li>1,000+ concurrent users supported</li>
+<li>Secure and automated payment processing</li>
+<li>Accurate passenger demand forecasting</li>
+<li>Reduced operation costs through autoscaling and CI/CD</li>
 </ul>
 <hr>
-<h2 id="6-kết-quả-kỳ-vọng">6. Kết Quả Kỳ Vọng</h2>
-<ul>
-<li>Nền tảng vận hành <strong>an toàn, hiện đại, dựa trên AWS Cloud</strong>.</li>
-<li><strong>Thanh toán không tiền mặt</strong> và <strong>xác nhận vé tự động</strong>.</li>
-<li><strong>Hạ tầng mở rộng linh hoạt</strong>, sẵn sàng cho tích hợp IoT.</li>
-<li><strong>Minh bạch vận hành</strong> qua dashboard phân tích dữ liệu.</li>
-<li><strong>Chi phí tối ưu</strong> nhờ mô hình trả theo mức sử dụng.</li>
-</ul>
-<hr>
-<h2 id="7-rủi-ro--giải-pháp">7. Rủi Ro &amp; Giải Pháp</h2>
-<table>
-  <thead>
-      <tr>
-          <th>Rủi ro</th>
-          <th>Giải pháp</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Gián đoạn mạng AWS</td>
-          <td>Thiết lập Multi-AZ, failover tự động</td>
-      </tr>
-      <tr>
-          <td>Quá tải Lambda</td>
-          <td>Bật autoscaling và giới hạn timeout</td>
-      </tr>
-      <tr>
-          <td>Tấn công bảo mật</td>
-          <td>Sử dụng WAF, IAM least privilege, KMS</td>
-      </tr>
-      <tr>
-          <td>Sai lệch dữ liệu</td>
-          <td>Tự động sao lưu và khôi phục RDS</td>
-      </tr>
-      <tr>
-          <td>Lỗi triển khai</td>
-          <td>CI/CD rollback và CloudFormation drift detection</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h3 id="71-risk-classification-matrix">7.1 Risk Classification Matrix</h3>
-<table>
-  <thead>
-      <tr>
-          <th>Risk</th>
-          <th>Likelihood</th>
-          <th>Impact</th>
-          <th>Mitigation</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Network outage</td>
-          <td>Medium</td>
-          <td>High</td>
-          <td>Multi-AZ + Failover</td>
-      </tr>
-      <tr>
-          <td>API overload</td>
-          <td>High</td>
-          <td>Medium</td>
-          <td>Lambda concurrency + autoscaling</td>
-      </tr>
-      <tr>
-          <td>Data breach</td>
-          <td>Low</td>
-          <td>High</td>
-          <td>KMS encryption + WAF</td>
-      </tr>
-      <tr>
-          <td>CI/CD failure</td>
-          <td>Medium</td>
-          <td>Low</td>
-          <td>Rollback + versioning</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2 id="8-tuân-thủ--bảo-mật">8. Tuân Thủ &amp; Bảo Mật</h2>
-<ul>
-<li><strong>Compliance:</strong> ISO 27001, GDPR-ready, SOC2 Type II</li>
-<li><strong>Encryption:</strong> AES-256 (KMS-managed)</li>
-<li><strong>IAM Policies:</strong> Principle of Least Privilege</li>
-<li><strong>Monitoring:</strong> Continuous Audit với CloudTrail &amp; GuardDuty</li>
-</ul>
-<hr>
-<h2 id="9-kết-luận">9. Kết Luận</h2>
-<p>Hệ thống <strong>Đường Sắt Đô Thị Trên AWS</strong> là nền tảng chiến lược giúp chuyển đổi số ngành giao thông công cộng tại TP.HCM.<br>
-Với kiến trúc <strong>serverless – event-driven – CI/CD automation</strong>, giải pháp này đáp ứng các yêu cầu hiện đại về <strong>bảo mật, hiệu suất và chi phí</strong>.<br>
-Đây không chỉ là dự án kỹ thuật, mà còn là <strong>bước tiến hướng tới thành phố thông minh trong tương lai</strong>.</p>
-<hr>
-<h2 id="10-success-metrics">10. Success Metrics</h2>
-<table>
-  <thead>
-      <tr>
-          <th>KPI</th>
-          <th>Target</th>
-          <th>Measurement Tool</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>System Availability</td>
-          <td>≥ 99.95%</td>
-          <td>CloudWatch uptime metrics</td>
-      </tr>
-      <tr>
-          <td>API Latency</td>
-          <td>&lt; 300 ms</td>
-          <td>CloudWatch logs</td>
-      </tr>
-      <tr>
-          <td>Ticket Processing</td>
-          <td>10,000+/day</td>
-          <td>Lambda invocation count</td>
-      </tr>
-      <tr>
-          <td>Cost Optimization</td>
-          <td>&lt; $100/month</td>
-          <td>AWS Cost Explorer</td>
-      </tr>
-      <tr>
-          <td>Security Compliance</td>
-          <td>100%</td>
-          <td>GuardDuty &amp; IAM Audit</td>
-      </tr>
-  </tbody>
-</table>
-<hr>
-<h2 id="appendix-a--aws-services-summary">Appendix A — AWS Services Summary</h2>
+<h1 id="appendix-a--aws-services-summary">Appendix A — AWS Services Summary</h1>
 <table>
   <thead>
       <tr>
           <th>Category</th>
-          <th>Services Used</th>
-          <th>Purpose</th>
+          <th>AWS Services</th>
       </tr>
   </thead>
   <tbody>
       <tr>
+          <td>Edge</td>
+          <td>Route53, CloudFront, WAF</td>
+      </tr>
+      <tr>
           <td>Networking</td>
-          <td>Route 53, CloudFront</td>
-          <td>DNS, CDN, HTTPS</td>
+          <td>VPC, ALB</td>
       </tr>
       <tr>
           <td>Compute</td>
-          <td>Lambda</td>
-          <td>Serverless compute</td>
-      </tr>
-      <tr>
-          <td>API</td>
-          <td>API Gateway</td>
-          <td>REST API endpoints</td>
+          <td>ECS Fargate, ECR</td>
       </tr>
       <tr>
           <td>Database</td>
-          <td>RDS (SQL Server)</td>
-          <td>Transactional data</td>
+          <td>RDS SQL Server, ElastiCache</td>
       </tr>
       <tr>
-          <td>Storage</td>
-          <td>S3 + Glacier</td>
-          <td>File storage &amp; archival</td>
+          <td>Event</td>
+          <td>EventBridge, SNS, SQS</td>
       </tr>
       <tr>
-          <td>Security</td>
-          <td>Cognito, WAF, KMS, Secrets Manager</td>
-          <td>Authentication &amp; protection</td>
-      </tr>
-      <tr>
-          <td>DevOps</td>
-          <td>CodePipeline, CodeBuild, CodeDeploy</td>
-          <td>CI/CD automation</td>
+          <td>Analytics</td>
+          <td>Kinesis, S3, QuickSight, SageMaker</td>
       </tr>
       <tr>
           <td>Monitoring</td>
-          <td>CloudWatch, CloudTrail, GuardDuty</td>
-          <td>Observability &amp; compliance</td>
+          <td>CloudWatch, CloudTrail</td>
+      </tr>
+      <tr>
+          <td>CI/CD</td>
+          <td>CodePipeline, CodeBuild, CodeDeploy</td>
       </tr>
   </tbody>
 </table>
-<hr>
-<p>🖼️ <em>Hình minh họa:</em><br>
-<img src="../../images/2-Proposal/aws_metropolitano_train_service.drawio.png" alt="AWS Architecture Diagram"></p>
+<p><img src="../../images/2-Proposal/aws_architecture.png" alt="AWS-architecture"></p>
 
 
 
@@ -2239,19 +2074,19 @@ Với kiến trúc <strong>serverless – event-driven – CI/CD automation</str
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1763311626"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1763311626"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1763311626"></script>
-    <script src="../../js/jquery.sticky.js?1763311626"></script>
-    <script src="../../js/featherlight.min.js?1763311626"></script>
-    <script src="../../js/highlight.pack.js?1763311626"></script>
+    <script src="../../js/clipboard.min.js?1763435541"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1763435541"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1763435541"></script>
+    <script src="../../js/jquery.sticky.js?1763435541"></script>
+    <script src="../../js/featherlight.min.js?1763435541"></script>
+    <script src="../../js/highlight.pack.js?1763435541"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1763311626"></script>
-    <script src="../../js/learn.js?1763311626"></script>
-    <script src="../../js/hugo-learn.js?1763311626"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1763435541"></script>
+    <script src="../../js/learn.js?1763435541"></script>
+    <script src="../../js/hugo-learn.js?1763435541"></script>
 
-    <link href="../../mermaid/mermaid.css?1763311626" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1763311626"></script>
+    <link href="../../mermaid/mermaid.css?1763435541" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1763435541"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
