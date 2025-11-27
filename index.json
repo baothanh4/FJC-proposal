@@ -151,7 +151,7 @@
 	"title": "Worklog",
 	"tags": [],
 	"description": "",
-	"content": "\rWeek 1: Getting familiar with AWS and basic AWS services\nWeek 2: Learn Amazon RDS,AWS DynamoDB, LightSail and EC2 Auto Scaling Week 3: Learn security\nWeek 4: Learn AWS DynamoDB and Relational Database Services\nWeek 5: authentication and storage\nWeek 6: Data encrytion\nWeek 7: optimized performance\nWeek 8: setup of networking, authentication, and file sharing\nWeek 9: Practice with security and operations\nWeek 10: Learn monitoring performance\nWeek 11: Learn Redis and more AWS Security Week 12: Doing task N\u0026hellip;\n"
+	"content": "Week 1: Getting familiar with AWS and basic AWS services\nWeek 2: Learn Amazon RDS,AWS DynamoDB, LightSail and EC2 Auto Scaling Week 3: Learn security\nWeek 4: Learn AWS DynamoDB and Relational Database Services\nWeek 5: authentication and storage\nWeek 6: Data encrytion\nWeek 7: optimized performance\nWeek 8: setup of networking, authentication, and file sharing\nWeek 9: Practice with security and operations\nWeek 10: Learn monitoring performance\nWeek 11: Learn Redis and more AWS Security Week 12: Doing task N\u0026hellip;\n"
 },
 {
 	"uri": "https://thienluhoan.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/",

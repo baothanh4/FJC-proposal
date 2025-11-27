@@ -74,7 +74,7 @@
 	"title": "Nhật ký công việc",
 	"tags": [],
 	"description": "",
-	"content": "\rTuần 1: Làm quen với AWS và các dịch vụ cơ bản trong AWS\nTuần 2: Làm công việc với Amazon RDS,AWS DynamoDB, LightSail và EC2 Auto Scaling\nTuần 3: Học về AWS Security\nTuần 4: Học về AWS DynamoDB và Relational Database Services\nTuần 5: Phân quyền và lưu trữ\nTuần 6: Mã hóa dữ liệu\nTuần 7: Tối ưu hiệu năng\nTuần 8: setup networking, Phân quyền, và chia sẻ file\nTuần 9: Thực hành với bảo mật và vận hành\nTuần 10: Học về quan sát hiệu năng\nTuần 11: Học về Redis và những dịch vụ bảo mật\nTuần 12: Làm công việc N\u0026hellip;\n"
+	"content": "Tuần 1: Làm quen với AWS và các dịch vụ cơ bản trong AWS\nTuần 2: Làm công việc với Amazon RDS,AWS DynamoDB, LightSail và EC2 Auto Scaling\nTuần 3: Học về AWS Security\nTuần 4: Học về AWS DynamoDB và Relational Database Services\nTuần 5: Phân quyền và lưu trữ\nTuần 6: Mã hóa dữ liệu\nTuần 7: Tối ưu hiệu năng\nTuần 8: setup networking, Phân quyền, và chia sẻ file\nTuần 9: Thực hành với bảo mật và vận hành\nTuần 10: Học về quan sát hiệu năng\nTuần 11: Học về Redis và những dịch vụ bảo mật\nTuần 12: Làm công việc N\u0026hellip;\n"
 },
 {
 	"uri": "https://thienluhoan.github.io/workshop-template/vi/4-eventparticipated/4.1-event1/",
