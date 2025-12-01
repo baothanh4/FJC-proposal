@@ -314,19 +314,6 @@
                 href="https://thienluhoan.github.io/workshop-template/vi/5-workshop/5.2-prerequiste/"
                 />
   </url><url>
-    <loc>https://thienluhoan.github.io/workshop-template/vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/</loc>
-    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://thienluhoan.github.io/workshop-template/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://thienluhoan.github.io/workshop-template/vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
-                />
-  </url><url>
     <loc>https://thienluhoan.github.io/workshop-template/vi/2-proposal/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -338,6 +325,19 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://thienluhoan.github.io/workshop-template/vi/2-proposal/"
+                />
+  </url><url>
+    <loc>https://thienluhoan.github.io/workshop-template/vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://thienluhoan.github.io/workshop-template/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://thienluhoan.github.io/workshop-template/vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
                 />
   </url><url>
     <loc>https://thienluhoan.github.io/workshop-template/vi/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/</loc>
