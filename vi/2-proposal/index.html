@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi" class="js csstransforms3d">
-  <head>
+  <head><script src="/workshop-template/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=workshop-template/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.150.0">
@@ -12,24 +12,24 @@
 
     <link rel="icon" href="../../images/favicon.png" type="image/png">
 
-    <title>Đề xuất :: Báo cáo thực tập</title>
+    <title>Đề xuất :: Báo cáo thực tập</title>
 
     
-    <link href="../../css/nucleus.css?1764573318" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1764573318" rel="stylesheet">
-    <link href="../../css/hybrid.css?1764573318" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1764573318" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1764573318" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1764573318" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1764573318" rel="stylesheet">
-    <link href="../../css/theme.css?1764573318" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1764573318" rel="stylesheet">
+    <link href="../../css/nucleus.css?1764690697" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1764690697" rel="stylesheet">
+    <link href="../../css/hybrid.css?1764690697" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1764690697" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1764690697" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1764690697" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1764690697" rel="stylesheet">
+    <link href="../../css/theme.css?1764690697" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1764690697" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1764573318" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1764690697" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1764573318"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1764690697"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1764573318"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1764573318"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1764690697"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1764690697"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/\/vi";
+        var baseurl = "http:\/\/localhost:1313\/workshop-template\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1764573318"></script>
+<script type="text/javascript" src="../../js/search.js?1764690697"></script>
  
   </div>
 
@@ -341,7 +341,7 @@
            
 <li
   data-nav-id="/vi/2-proposal/"
-  title="Đề xuất"
+  title="Đề xuất"
   class="dd-item 
         
         active
@@ -349,7 +349,7 @@
         "
 >
   <a href="../../vi/2-proposal/">
-    <b> 2. </b>Đề xuất 
+    <b> 2. </b>Đề xuất 
     <i class="fas fa-check read-icon"></i>
     
   </a>
@@ -851,14 +851,14 @@
                        
                 <option
                   id="en"
-                  value="https://thienluhoan.github.io/workshop-template/2-proposal/"
+                  value="http://localhost:1313/workshop-template/2-proposal/"
                 >
                   English
                 </option>
                             
                 <option
                   id="vi"
-                  value="https://thienluhoan.github.io/workshop-template/vi/2-proposal/"
+                  value="http://localhost:1313/workshop-template/vi/2-proposal/"
                   selected
                 >
                   Tiếng Việt
@@ -968,7 +968,7 @@
             
           
           
-            <a href='../../vi/'>Báo cáo thực tập</a> > Đề xuất
+            <a href='../../vi/'>Báo cáo thực tập</a> > Đề xuất
           
         
           
@@ -981,7 +981,7 @@
   <div class="wrapper"><nav id="TableOfContents">
   <ul>
     <li><a href="#tóm-tắt-điều-hành">Tóm tắt điều hành</a></li>
-    <li><a href="#điểm-nổi-bật-chính">Điểm nổi bật chính</a></li>
+    <li><a href="#điểm-nhấn-chính">Điểm nhấn chính</a></li>
   </ul>
 
   <ul>
@@ -995,21 +995,21 @@
 
   <ul>
     <li><a href="#31-tổng-quan-kiến-trúc">3.1 Tổng quan kiến trúc</a></li>
-    <li><a href="#32-mạng-và-lớp-truy-cập">3.2 Mạng và lớp truy cập</a></li>
-    <li><a href="#33-lớp-ứng-dụng--microservices-trên-ecs-fargate">3.3 Lớp ứng dụng — Microservices trên ECS Fargate</a>
+    <li><a href="#32-tầng-mạng-và-truy-cập">3.2 Tầng mạng và truy cập</a></li>
+    <li><a href="#33-tầng-ứng-dụng--ec2-auto-scaling">3.3 Tầng ứng dụng — EC2 Auto Scaling</a>
       <ul>
-        <li><a href="#vì-sao-chọn-fargate">Vì sao chọn Fargate?</a></li>
-        <li><a href="#microservices">Microservices</a></li>
+        <li><a href="#vì-sao-chọn-ec2">Vì sao chọn EC2?</a></li>
+        <li><a href="#mô-hình-triển-khai-ứng-dụng">Mô hình triển khai ứng dụng</a></li>
+        <li><a href="#các-backend-service">Các backend service:</a></li>
       </ul>
     </li>
-    <li><a href="#34-lớp-dữ-liệu">3.4 Lớp dữ liệu</a>
+    <li><a href="#34-tầng-dữ-liệu">3.4 Tầng dữ liệu</a>
       <ul>
         <li><a href="#amazon-rds-sql-server">Amazon RDS (SQL Server)</a></li>
-        <li><a href="#elasticache-redis">ElastiCache Redis</a></li>
         <li><a href="#amazon-s3">Amazon S3</a></li>
       </ul>
     </li>
-    <li><a href="#35-lớp-sự-kiện--messaging">3.5 Lớp sự kiện &amp; messaging</a>
+    <li><a href="#35-tầng-sự-kiện--nhắn-tin">3.5 Tầng sự kiện &amp; nhắn tin</a>
       <ul>
         <li><a href="#amazon-eventbridge">Amazon EventBridge</a></li>
         <li><a href="#amazon-sqs">Amazon SQS</a></li>
@@ -1020,13 +1020,12 @@
       <ul>
         <li><a href="#kinesis-data-streams">Kinesis Data Streams</a></li>
         <li><a href="#quicksight">QuickSight</a></li>
-        <li><a href="#sagemaker">SageMaker</a></li>
       </ul>
     </li>
     <li><a href="#37-giám-sát--quan-sát">3.7 Giám sát &amp; quan sát</a></li>
-    <li><a href="#38-pipeline-cicd">3.8 Pipeline CI/CD</a>
+    <li><a href="#38-cicd-pipeline">3.8 CI/CD Pipeline</a>
       <ul>
-        <li><a href="#tính-năng">Tính năng:</a></li>
+        <li><a href="#tính-năng-triển-khai">Tính năng triển khai</a></li>
       </ul>
     </li>
   </ul>
@@ -1045,7 +1044,7 @@
           
             <h1>
               
-              Đề xuất
+              Đề xuất
             </h1>
           
 
@@ -1053,38 +1052,39 @@
 
 
 
-	<h1 id="hệ-thống-dịch-vụ-đường-sắt-đô-thị-trên-aws">HỆ THỐNG DỊCH VỤ ĐƯỜNG SẮT ĐÔ THỊ TRÊN AWS</h1>
+	<h1 id="hệ-thống-dịch-vụ-đường-sắt-đô-thị-trên-nền-tảng-aws">HỆ THỐNG DỊCH VỤ ĐƯỜNG SẮT ĐÔ THỊ TRÊN NỀN TẢNG AWS</h1>
 <hr>
 <h2 id="tóm-tắt-điều-hành">Tóm tắt điều hành</h2>
-<p>Sự phát triển nhanh của đô thị đã làm tăng nhu cầu về giao thông công cộng thông minh và bền vững. Một Hệ thống Đường sắt Đô thị hiện đại cần một <strong>nền tảng số tin cậy, có khả năng mở rộng và luôn hoạt động 24/7</strong>.</p>
-<p>Đề xuất này trình bày <strong>kiến trúc microservices trên AWS sử dụng Amazon ECS Fargate</strong>, cho phép:</p>
+<p>Sự phát triển nhanh của đô thị làm gia tăng nhu cầu về hệ thống giao thông công cộng thông minh và bền vững. Một hệ thống Đường Sắt Đô Thị hiện đại cần một nền tảng số <strong>ổn định, mở rộng linh hoạt và sẵn sàng 24/7</strong>.</p>
+<p>Tài liệu này trình bày một <strong>kiến trúc AWS xây dựng trên Amazon EC2</strong>, mang lại khả năng kiểm soát hoàn toàn, hiệu suất cao và độ linh hoạt cho các hệ thống quan trọng.</p>
+<p>Nền tảng hỗ trợ:</p>
 <ul>
-<li>Đặt vé, lập lịch, thanh toán và giám sát giao thông</li>
-<li>Nhập dữ liệu hành khách theo thời gian thực qua Amazon Kinesis</li>
-<li>Báo cáo BI và phân tích dự đoán với QuickSight và SageMaker</li>
-<li>Tự động hóa CI/CD đầy đủ và giám sát toàn diện</li>
+<li>Đặt vé, lập lịch, thanh toán và giám sát lưu lượng</li>
+<li>Thu thập dữ liệu hành khách thời gian thực với Amazon Kinesis</li>
+<li>Dashboard BI và phân tích dự đoán bằng QuickSight và SageMaker</li>
+<li>Tự động hóa CI/CD và giám sát toàn diện</li>
 </ul>
 <hr>
-<h2 id="điểm-nổi-bật-chính">Điểm nổi bật chính</h2>
+<h2 id="điểm-nhấn-chính">Điểm nhấn chính</h2>
 <ul>
-<li><strong>Kiến trúc microservices container</strong> chạy trên Amazon ECS Fargate</li>
-<li>Bảo mật end-to-end: Route53 → CloudFront → WAF → ALB → Private Subnets</li>
-<li>CI/CD tự động hoàn toàn bằng CodePipeline, CodeBuild, CodeDeploy, ECR</li>
-<li>Xử lý dữ liệu theo thời gian thực với <strong>Kinesis Data Streams</strong></li>
-<li>Phân tích và dự đoán với <strong>QuickSight + SageMaker</strong></li>
-<li>Khả năng mở rộng cho hàng trăm nghìn yêu cầu đặt vé mỗi ngày</li>
+<li>Kiến trúc <strong>EC2</strong> với Auto Scaling &amp; ALB</li>
+<li>Chuỗi bảo mật đầu-cuối: Route53 → CloudFront → WAF → ALB → Private EC2</li>
+<li>Tự động hóa CI/CD với CodePipeline, CodeBuild, CodeDeploy</li>
+<li>Xử lý thời gian thực bằng <strong>Kinesis Data Streams</strong></li>
+<li>Phân tích dữ liệu với <strong>QuickSight</strong></li>
+<li>Đảm bảo HA &amp; khả năng mở rộng trên nhiều AZ</li>
 </ul>
 <hr>
 <h1 id="1-mục-tiêu-dự-án">1. Mục tiêu dự án</h1>
 <h3 id="mục-tiêu-chính">Mục tiêu chính</h3>
-<p>Xây dựng nền tảng số cho Hệ thống Đường sắt Đô thị với khả năng mở rộng, bảo mật và ổn định vận hành dài hạn.</p>
+<p>Xây dựng nền tảng số cho hệ thống Đường Sắt Đô Thị với khả năng mở rộng, bảo mật và vận hành ổn định dài hạn.</p>
 <h3 id="mục-tiêu-cụ-thể">Mục tiêu cụ thể</h3>
 <ul>
-<li>Triển khai các dịch vụ vé, lịch trình, thanh toán và thông báo dưới dạng microservices</li>
-<li>Hỗ trợ vận hành tự động và giám sát hệ thống toàn diện</li>
-<li>Thiết lập pipeline CI/CD hoàn chỉnh với zero downtime</li>
-<li>Hỗ trợ nhập dữ liệu hành khách theo thời gian thực và phân tích</li>
-<li>Cung cấp kiến trúc đa AZ với ≥ 99,95% độ sẵn sàng hệ thống</li>
+<li>Triển khai dịch vụ đặt vé, lập lịch, thanh toán, thông báo</li>
+<li>Kích hoạt vận hành tự động và giám sát toàn hệ thống</li>
+<li>Xây dựng pipeline CI/CD với khả năng triển khai không downtime lên EC2</li>
+<li>Hỗ trợ thu thập và phân tích dữ liệu thời gian thực</li>
+<li>Cung cấp kiến trúc đa-AZ với độ sẵn sàng ≥ 99.95%</li>
 </ul>
 <hr>
 <h1 id="2-phạm-vi-dự-án">2. Phạm vi dự án</h1>
@@ -1097,141 +1097,140 @@
   </thead>
   <tbody>
       <tr>
-          <td>Khu vực (Region)</td>
+          <td>Region</td>
           <td>AWS Singapore (ap-southeast-1)</td>
       </tr>
       <tr>
           <td>Người dùng</td>
-          <td>Hành khách, nhân viên vận hành, quản trị viên</td>
+          <td>Hành khách, nhân viên vận hành, quản trị</td>
       </tr>
       <tr>
           <td>Kiến trúc</td>
-          <td>Microservices trên ECS Fargate</td>
+          <td>Multi-tier trên EC2</td>
       </tr>
       <tr>
           <td>Giai đoạn 1</td>
-          <td>Vé, lịch trình, thông báo</td>
+          <td>Đặt vé, lập lịch, thông báo</td>
       </tr>
       <tr>
           <td>Giai đoạn 2</td>
-          <td>Phân tích, dashboard BI, dự báo AI</td>
+          <td>Analytics, dashboard BI</td>
       </tr>
   </tbody>
 </table>
 <hr>
 <h1 id="3-kiến-trúc-aws-đề-xuất">3. Kiến trúc AWS đề xuất</h1>
 <h2 id="31-tổng-quan-kiến-trúc">3.1 Tổng quan kiến trúc</h2>
-<p>Một <strong>kiến trúc microservices nhiều tầng</strong> sẽ được triển khai, bao gồm:</p>
+<p>Kiến trúc <strong>đa tầng</strong> bao gồm:</p>
 <ul>
-<li><strong>Lớp Edge:</strong> Route53, CloudFront, AWS WAF</li>
-<li><strong>Lớp ứng dụng:</strong> ALB → ECS Fargate → ECR</li>
-<li><strong>Lớp dữ liệu:</strong> RDS SQL Server, ElastiCache Redis</li>
-<li><strong>Lớp sự kiện:</strong> EventBridge, SNS, SQS</li>
-<li><strong>Lớp phân tích:</strong> Kinesis → S3 → QuickSight → SageMaker</li>
-<li><strong>Lớp giám sát:</strong> CloudWatch, CloudTrail</li>
-<li><strong>Lớp CI/CD:</strong> CodePipeline, CodeBuild, CodeDeploy</li>
+<li><strong>Tầng Edge:</strong> Route53, CloudFront, AWS WAF</li>
+<li><strong>Tầng Ứng dụng:</strong> ALB → EC2 Auto Scaling Group</li>
+<li><strong>Tầng Dữ liệu:</strong> RDS SQL Server, ElastiCache Redis</li>
+<li><strong>Tầng sự kiện:</strong> EventBridge, SNS, SQS</li>
+<li><strong>Tầng phân tích:</strong> Kinesis → S3 → QuickSight → SageMaker</li>
+<li><strong>Giám sát:</strong> CloudWatch, CloudTrail</li>
+<li><strong>CI/CD:</strong> CodePipeline, CodeBuild, CodeDeploy</li>
 </ul>
 <hr>
-<h2 id="32-mạng-và-lớp-truy-cập">3.2 Mạng và lớp truy cập</h2>
+<h2 id="32-tầng-mạng-và-truy-cập">3.2 Tầng mạng và truy cập</h2>
 <ul>
-<li><strong>Route 53:</strong> Định tuyến DNS toàn cầu</li>
-<li><strong>CloudFront:</strong> CDN, caching, truy cập độ trễ thấp</li>
-<li><strong>AWS WAF:</strong> Bảo vệ khỏi DDoS, SQL injection, XSS</li>
-<li><strong>Application Load Balancer:</strong> Phân phối traffic tới các microservices</li>
+<li><strong>Route 53:</strong> DNS toàn cầu</li>
+<li><strong>CloudFront:</strong> CDN tăng tốc và cache nội dung</li>
+<li><strong>AWS WAF:</strong> Lọc bảo mật (SQLi, XSS, bot)</li>
+<li><strong>Application Load Balancer:</strong> Điều phối traffic vào EC2</li>
 </ul>
-<p><strong>Luồng traffic:</strong><br>
-<strong>Người dùng → Route53 → CloudFront → WAF → ALB → Private Subnet → ECS Fargate</strong></p>
+<p><strong>Luồng truy cập:</strong><br>
+<strong>Người dùng → Route53 → CloudFront → WAF → ALB → Private Subnet → EC2</strong></p>
 <hr>
-<h2 id="33-lớp-ứng-dụng--microservices-trên-ecs-fargate">3.3 Lớp ứng dụng — Microservices trên ECS Fargate</h2>
-<h3 id="vì-sao-chọn-fargate">Vì sao chọn Fargate?</h3>
+<h2 id="33-tầng-ứng-dụng--ec2-auto-scaling">3.3 Tầng ứng dụng — EC2 Auto Scaling</h2>
+<h3 id="vì-sao-chọn-ec2">Vì sao chọn EC2?</h3>
 <ul>
-<li>Không quản lý server</li>
-<li>Autoscaling dựa trên CPU/Memory</li>
-<li>Bảo mật cao trong private subnet</li>
+<li>Kiểm soát toàn bộ hệ điều hành và môi trường chạy</li>
+<li>Phù hợp cho cả monolithic và microservice</li>
+<li>Ổn định cho backend chạy dài hạn</li>
+<li>Tự động scaling theo CPU, network, request count</li>
+<li>EC2 role đảm bảo truy cập an toàn vào tài nguyên AWS</li>
 </ul>
-<h3 id="microservices">Microservices</h3>
+<h3 id="mô-hình-triển-khai-ứng-dụng">Mô hình triển khai ứng dụng</h3>
+<ul>
+<li>Backend chạy trên <strong>Auto Scaling Group</strong></li>
+<li>EC2 đặt trong <strong>Private Subnet</strong> để tăng bảo mật</li>
+<li>Triển khai qua <strong>CodeDeploy (Blue/Green hoặc Rolling)</strong></li>
+</ul>
+<h3 id="các-backend-service">Các backend service:</h3>
 <ul>
 <li>Booking Service</li>
 <li>Schedule Service</li>
 <li>Payment Service</li>
 <li>Notification Service</li>
 <li>User Service</li>
-<li>Staff &amp; Operation Service</li>
+<li>Operation &amp; Reporting Service</li>
 </ul>
-<p><strong>Docker Images</strong> lưu trữ trong <strong>Amazon ECR</strong></p>
 <hr>
-<h2 id="34-lớp-dữ-liệu">3.4 Lớp dữ liệu</h2>
+<h2 id="34-tầng-dữ-liệu">3.4 Tầng dữ liệu</h2>
 <h3 id="amazon-rds-sql-server">Amazon RDS (SQL Server)</h3>
 <ul>
-<li>Lưu vé, lịch trình, tài khoản người dùng, thanh toán</li>
-<li>Multi-AZ để đảm bảo tính sẵn sàng cao</li>
-<li>Backup và failover tự động</li>
-</ul>
-<h3 id="elasticache-redis">ElastiCache Redis</h3>
-<ul>
-<li>Cache lịch trình → giảm tải RDS</li>
-<li>Tăng hiệu năng API lên đến 10×</li>
+<li>Lưu vé, lịch, tài khoản người dùng, thanh toán</li>
+<li>Multi-AZ đảm bảo HA</li>
+<li>Tự động backup, tự động failover</li>
+<li>Hỗ trợ IAM authentication &amp; mã hóa dữ liệu</li>
 </ul>
 <h3 id="amazon-s3">Amazon S3</h3>
 <ul>
-<li>Lưu báo cáo, hóa đơn, tệp tin</li>
-<li>Là nơi lưu dữ liệu streaming từ Kinesis</li>
+<li>Lưu tài liệu, báo cáo, log, dữ liệu phân tích</li>
+<li>Lưu dữ liệu stream từ Kinesis</li>
+<li>Tự động tối ưu chi phí nhờ lifecycle</li>
 </ul>
 <hr>
-<h2 id="35-lớp-sự-kiện--messaging">3.5 Lớp sự kiện &amp; messaging</h2>
+<h2 id="35-tầng-sự-kiện--nhắn-tin">3.5 Tầng sự kiện &amp; nhắn tin</h2>
 <h3 id="amazon-eventbridge">Amazon EventBridge</h3>
-<p>Tự động hóa workflow, ví dụ:</p>
+<p>Tự động hóa quy trình, ví dụ:</p>
 <ul>
 <li>PaymentSuccess → CreateInvoice → NotifyUser</li>
-<li>ScheduleUpdate → BroadcastToMobile</li>
+<li>TrainDelay → PushNotifications → Cập nhật dashboard</li>
 </ul>
 <h3 id="amazon-sqs">Amazon SQS</h3>
 <ul>
-<li>Hệ thống queue cho thông báo và xử lý vé</li>
-<li>Bảo vệ dịch vụ khi lưu lượng tăng đột biến</li>
+<li>Hàng đợi buffer cho workload lớn</li>
+<li>Ngăn hệ thống quá tải giờ cao điểm</li>
 </ul>
 <h3 id="amazon-sns">Amazon SNS</h3>
 <ul>
-<li>Gửi SMS, email, push notification</li>
+<li>Gửi thông báo đa kênh (SMS, email, push)</li>
 </ul>
 <hr>
 <h2 id="36-phân-tích-thời-gian-thực">3.6 Phân tích thời gian thực</h2>
 <h3 id="kinesis-data-streams">Kinesis Data Streams</h3>
 <ul>
 <li>Thu thập dữ liệu hành khách theo thời gian thực</li>
-<li>Logs ứng dụng → Kinesis → S3</li>
+<li>Ứng dụng ghi log → Kinesis → S3</li>
 </ul>
 <h3 id="quicksight">QuickSight</h3>
 <ul>
-<li>Dashboard cho doanh thu hàng ngày, tải trạm, giờ cao điểm</li>
-</ul>
-<h3 id="sagemaker">SageMaker</h3>
-<ul>
-<li>Dự đoán nhu cầu hành khách</li>
-<li>Tối ưu tần suất chạy tàu trong giờ cao điểm</li>
+<li>Dashboard kinh doanh: doanh thu vé, giờ cao điểm, sự cố</li>
 </ul>
 <hr>
 <h2 id="37-giám-sát--quan-sát">3.7 Giám sát &amp; quan sát</h2>
 <ul>
-<li><strong>CloudWatch Metrics:</strong> CPU, Memory, độ trễ ALB</li>
-<li><strong>CloudWatch Logs:</strong> logs ứng dụng Fargate</li>
-<li><strong>SNS Alerts:</strong> thông báo lỗi</li>
-<li><strong>CloudTrail:</strong> theo dõi hoạt động quản trị &amp; tuân thủ</li>
+<li><strong>CloudWatch Metrics:</strong> Theo dõi EC2, ALB, RDS</li>
+<li><strong>CloudWatch Logs:</strong> Nhận log từ EC2</li>
+<li><strong>SNS Alerts:</strong> Cảnh báo sự cố</li>
+<li><strong>CloudTrail:</strong> Giám sát thao tác hệ thống</li>
 </ul>
 <hr>
-<h2 id="38-pipeline-cicd">3.8 Pipeline CI/CD</h2>
-<p>Commit của developer<br>
+<h2 id="38-cicd-pipeline">3.8 CI/CD Pipeline</h2>
+<p>Developer Commit<br>
 → CodePipeline<br>
 → CodeBuild<br>
-→ Build Docker Image<br>
-→ Push ECR<br>
+→ Artifact Storage<br>
 → CodeDeploy<br>
-→ ECS Fargate</p>
-<h3 id="tính-năng">Tính năng:</h3>
+→ EC2 Auto Scaling Group</p>
+<h3 id="tính-năng-triển-khai">Tính năng triển khai</h3>
 <ul>
-<li>Rolling deployments <strong>zero downtime</strong></li>
-<li>Kiểm tra sức khỏe ALB</li>
-<li>Tự động rollback khi thất bại</li>
+<li>Blue/Green hoặc Rolling</li>
+<li>Kiểm tra sức khỏe qua ALB</li>
+<li>Tự động rollback</li>
+<li>Cập nhật không downtime</li>
 </ul>
 <hr>
 <h1 id="4-kế-hoạch-triển-khai">4. Kế hoạch triển khai</h1>
@@ -1252,7 +1251,7 @@
       <tr>
           <td>2</td>
           <td>3 tuần</td>
-          <td>ECS, ECR, RDS, ElastiCache</td>
+          <td>EC2 ASG, RDS</td>
       </tr>
       <tr>
           <td>3</td>
@@ -1267,22 +1266,22 @@
       <tr>
           <td>5</td>
           <td>2 tuần</td>
-          <td>Pipeline CI/CD</td>
+          <td>CI/CD (CodeDeploy)</td>
       </tr>
       <tr>
           <td>6</td>
           <td>2 tuần</td>
-          <td>Tăng cường bảo mật, tối ưu chi phí</td>
+          <td>Hardening &amp; tối ưu chi phí</td>
       </tr>
   </tbody>
 </table>
 <hr>
-<h1 id="5-ước-tính-chi-phí-vận-hành-hàng-tháng">5. Ước tính chi phí vận hành hàng tháng</h1>
+<h1 id="5-ước-tính-chi-phí-hàng-tháng-kiến-trúc-ec2">5. Ước tính chi phí hàng tháng (Kiến trúc EC2)</h1>
 <table>
   <thead>
       <tr>
           <th>Dịch vụ</th>
-          <th>Chi phí/Tháng</th>
+          <th>Chi phí/tháng</th>
       </tr>
   </thead>
   <tbody>
@@ -1291,23 +1290,19 @@
           <td>$24</td>
       </tr>
       <tr>
-          <td>ECS Fargate</td>
-          <td>$40</td>
+          <td>EC2 ASG (t3.micro x 2 AZ)</td>
+          <td>$38</td>
       </tr>
       <tr>
           <td>RDS</td>
           <td>$19</td>
       </tr>
       <tr>
-          <td>ElastiCache Redis</td>
-          <td>$73</td>
-      </tr>
-      <tr>
           <td>S3 + Kinesis</td>
           <td>$1</td>
       </tr>
       <tr>
-          <td>Giám sát</td>
+          <td>Monitoring</td>
           <td>$37</td>
       </tr>
       <tr>
@@ -1315,26 +1310,27 @@
           <td>$18</td>
       </tr>
       <tr>
-          <td><strong>Tổng chi phí ước tính</strong></td>
-          <td><strong>$212</strong></td>
+          <td><strong>Tổng cộng</strong></td>
+          <td><strong>$210</strong></td>
       </tr>
   </tbody>
 </table>
 <hr>
 <h1 id="6-kết-quả-kỳ-vọng">6. Kết quả kỳ vọng</h1>
 <ul>
-<li>Hoạt động đường sắt ổn định 24/7</li>
-<li>Hỗ trợ ≥ 1.000 người dùng đồng thời</li>
-<li>Thanh toán an toàn và tự động</li>
-<li>Dự báo nhu cầu hành khách chính xác</li>
-<li>Giảm chi phí vận hành nhờ autoscaling và CI/CD</li>
+<li>Hệ thống đường sắt vận hành ổn định 24/7</li>
+<li>Backend EC2 HA với autoscaling</li>
+<li>Bảo mật thanh toán và endpoint</li>
+<li>Phân tích dữ liệu hành khách thời gian thực</li>
+<li>Tối ưu chi phí vận hành</li>
+<li>Triển khai không downtime + dễ bảo trì</li>
 </ul>
 <hr>
-<h1 id="phụ-lục-a--tóm-tắt-dịch-vụ-aws">Phụ lục A — Tóm tắt dịch vụ AWS</h1>
+<h1 id="phụ-lục-a--danh-sách-dịch-vụ-aws">Phụ lục A — Danh sách dịch vụ AWS</h1>
 <table>
   <thead>
       <tr>
-          <th>Danh mục</th>
+          <th>Nhóm</th>
           <th>Dịch vụ AWS</th>
       </tr>
   </thead>
@@ -1349,11 +1345,11 @@
       </tr>
       <tr>
           <td>Compute</td>
-          <td>ECS Fargate, ECR</td>
+          <td>EC2, Auto Scaling Group</td>
       </tr>
       <tr>
           <td>Database</td>
-          <td>RDS SQL Server, ElastiCache</td>
+          <td>RDS SQL Server</td>
       </tr>
       <tr>
           <td>Event</td>
@@ -1361,10 +1357,10 @@
       </tr>
       <tr>
           <td>Analytics</td>
-          <td>Kinesis, S3, QuickSight, SageMaker</td>
+          <td>Kinesis, S3, QuickSight</td>
       </tr>
       <tr>
-          <td>Giám sát</td>
+          <td>Monitoring</td>
           <td>CloudWatch, CloudTrail</td>
       </tr>
       <tr>
@@ -1373,7 +1369,7 @@
       </tr>
   </tbody>
 </table>
-<p><img src="../../images/2-Proposal/aws_architecture.png" alt="AWS-architecture"></p>
+<p><img src="../../images/2-Proposal/aws_metropolitano_train_service.png" alt="AWS-architecture"></p>
 
 
 
@@ -2074,19 +2070,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1764573318"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1764573318"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1764573318"></script>
-    <script src="../../js/jquery.sticky.js?1764573318"></script>
-    <script src="../../js/featherlight.min.js?1764573318"></script>
-    <script src="../../js/highlight.pack.js?1764573318"></script>
+    <script src="../../js/clipboard.min.js?1764690697"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1764690697"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1764690697"></script>
+    <script src="../../js/jquery.sticky.js?1764690697"></script>
+    <script src="../../js/featherlight.min.js?1764690697"></script>
+    <script src="../../js/highlight.pack.js?1764690697"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1764573318"></script>
-    <script src="../../js/learn.js?1764573318"></script>
-    <script src="../../js/hugo-learn.js?1764573318"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1764690697"></script>
+    <script src="../../js/learn.js?1764690697"></script>
+    <script src="../../js/hugo-learn.js?1764690697"></script>
 
-    <link href="../../mermaid/mermaid.css?1764573318" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1764573318"></script>
+    <link href="../../mermaid/mermaid.css?1764690697" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1764690697"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

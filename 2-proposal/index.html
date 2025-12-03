@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
-  <head>
+  <head><script src="/workshop-template/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=workshop-template/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.150.0">
@@ -15,21 +15,21 @@
     <title>Proposal :: Internship Report</title>
 
     
-    <link href="../css/nucleus.css?1764573317" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1764573317" rel="stylesheet">
-    <link href="../css/hybrid.css?1764573317" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1764573317" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1764573317" rel="stylesheet">
-    <link href="../css/auto-complete.css?1764573317" rel="stylesheet">
-    <link href="../css/atom-one-dark-reasonable.css?1764573317" rel="stylesheet">
-    <link href="../css/theme.css?1764573317" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1764573317" rel="stylesheet">
+    <link href="../css/nucleus.css?1764690697" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1764690697" rel="stylesheet">
+    <link href="../css/hybrid.css?1764690697" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1764690697" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1764690697" rel="stylesheet">
+    <link href="../css/auto-complete.css?1764690697" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1764690697" rel="stylesheet">
+    <link href="../css/theme.css?1764690697" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1764690697" rel="stylesheet">
     
-    <link href="../css/theme-workshop.css?1764573317" rel="stylesheet">
+    <link href="../css/theme-workshop.css?1764690697" rel="stylesheet">
     
     
 
-    <script src="../js/jquery-3.3.1.min.js?1764573317"></script>
+    <script src="../js/jquery-3.3.1.min.js?1764690697"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1764573317"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1764573317"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1764690697"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1764690697"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/";
+        var baseurl = "http:\/\/localhost:1313\/workshop-template\/";
     
 </script>
-<script type="text/javascript" src="../js/search.js?1764573317"></script>
+<script type="text/javascript" src="../js/search.js?1764690697"></script>
  
   </div>
 
@@ -851,7 +851,7 @@
                        
                 <option
                   id="en"
-                  value="https://thienluhoan.github.io/workshop-template/2-proposal/"
+                  value="http://localhost:1313/workshop-template/2-proposal/"
                   selected
                 >
                   English
@@ -859,7 +859,7 @@
                             
                 <option
                   id="vi"
-                  value="https://thienluhoan.github.io/workshop-template/vi/2-proposal/"
+                  value="http://localhost:1313/workshop-template/vi/2-proposal/"
                 >
                   Tiếng Việt
                 </option>
@@ -996,16 +996,16 @@
   <ul>
     <li><a href="#31-architecture-overview">3.1 Architecture Overview</a></li>
     <li><a href="#32-networking--access-layer">3.2 Networking &amp; Access Layer</a></li>
-    <li><a href="#33-application-layer--microservices-on-ecs-fargate">3.3 Application Layer — Microservices on ECS Fargate</a>
+    <li><a href="#33-application-layer--ec2-auto-scaling">3.3 Application Layer — EC2 Auto Scaling</a>
       <ul>
-        <li><a href="#why-fargate">Why Fargate?</a></li>
-        <li><a href="#microservices">Microservices</a></li>
+        <li><a href="#why-ec2">Why EC2?</a></li>
+        <li><a href="#application-deployment-model">Application Deployment Model</a></li>
+        <li><a href="#backend-services-include">Backend Services Include:</a></li>
       </ul>
     </li>
     <li><a href="#34-data-layer">3.4 Data Layer</a>
       <ul>
         <li><a href="#amazon-rds-sql-server">Amazon RDS (SQL Server)</a></li>
-        <li><a href="#elasticache-redis">ElastiCache Redis</a></li>
         <li><a href="#amazon-s3">Amazon S3</a></li>
       </ul>
     </li>
@@ -1020,13 +1020,12 @@
       <ul>
         <li><a href="#kinesis-data-streams">Kinesis Data Streams</a></li>
         <li><a href="#quicksight">QuickSight</a></li>
-        <li><a href="#sagemaker">SageMaker</a></li>
       </ul>
     </li>
     <li><a href="#37-monitoring--observability">3.7 Monitoring &amp; Observability</a></li>
     <li><a href="#38-cicd-pipeline">3.8 CI/CD Pipeline</a>
       <ul>
-        <li><a href="#features">Features:</a></li>
+        <li><a href="#deployment-features">Deployment Features</a></li>
       </ul>
     </li>
   </ul>
@@ -1057,7 +1056,8 @@
 <hr>
 <h2 id="executive-summary">Executive Summary</h2>
 <p>Rapid urban development has increased the need for intelligent and sustainable public transportation. A modern Urban Rail Transit System requires a reliable, scalable, and highly available digital platform operating 24/7.</p>
-<p>This proposal presents an <strong>AWS microservices architecture using Amazon ECS Fargate</strong>, enabling:</p>
+<p>This proposal presents an <strong>AWS architecture built on Amazon EC2</strong>, ensuring full control, high performance, and flexibility for mission-critical workloads.</p>
+<p>The platform supports:</p>
 <ul>
 <li>Ticket booking, scheduling, payments, and traffic monitoring</li>
 <li>Real-time passenger data ingestion through Amazon Kinesis</li>
@@ -1067,12 +1067,12 @@
 <hr>
 <h2 id="key-highlights">Key Highlights</h2>
 <ul>
-<li><strong>Microservices container architecture</strong> powered by Amazon ECS Fargate</li>
-<li>End-to-end security: Route53 → CloudFront → WAF → ALB → Private Subnets</li>
-<li>Fully automated CI/CD using CodePipeline, CodeBuild, CodeDeploy, ECR</li>
+<li><strong>EC2-based architecture</strong> with Auto Scaling &amp; ALB</li>
+<li>End-to-end security: Route53 → CloudFront → WAF → ALB → Private EC2</li>
+<li>Fully automated CI/CD using CodePipeline, CodeBuild, CodeDeploy</li>
 <li>Real-time processing using <strong>Kinesis Data Streams</strong></li>
-<li>Analytics &amp; forecasting with <strong>QuickSight + SageMaker</strong></li>
-<li>Scalability for hundreds of thousands of daily ticket requests</li>
+<li>Analytics with <strong>QuickSight</strong></li>
+<li>High availability &amp; scalability across multiple AZs</li>
 </ul>
 <hr>
 <h1 id="1-project-objectives">1. Project Objectives</h1>
@@ -1080,11 +1080,11 @@
 <p>Build a digital platform for the Urban Rail Transit System with scalability, security, and long-term operational stability.</p>
 <h3 id="specific-objectives">Specific Objectives</h3>
 <ul>
-<li>Implement ticketing, scheduling, payment, and notification services as microservices</li>
+<li>Implement ticketing, scheduling, payment, and notification services</li>
 <li>Enable automated operations and system-wide monitoring</li>
-<li>Establish a full CI/CD pipeline with zero downtime</li>
+<li>Establish a full CI/CD pipeline with zero downtime deployment to EC2</li>
 <li>Support real-time passenger data ingestion and analytics</li>
-<li>Provide multi-AZ architecture with ≥ 99.95% system availability</li>
+<li>Provide multi-AZ architecture with ≥ 99.95% availability</li>
 </ul>
 <hr>
 <h1 id="2-project-scope">2. Project Scope</h1>
@@ -1106,7 +1106,7 @@
       </tr>
       <tr>
           <td>Architecture Style</td>
-          <td>Microservices on ECS Fargate</td>
+          <td>Multi-tier architecture on EC2</td>
       </tr>
       <tr>
           <td>Phase 1</td>
@@ -1114,17 +1114,17 @@
       </tr>
       <tr>
           <td>Phase 2</td>
-          <td>Analytics, BI dashboards, AI forecasting</td>
+          <td>Analytics, BI dashboards</td>
       </tr>
   </tbody>
 </table>
 <hr>
 <h1 id="3-proposed-aws-architecture">3. Proposed AWS Architecture</h1>
 <h2 id="31-architecture-overview">3.1 Architecture Overview</h2>
-<p>A <strong>multi-tier microservices architecture</strong> will be deployed, including:</p>
+<p>A <strong>multi-tier architecture</strong> will be deployed, including:</p>
 <ul>
 <li><strong>Edge Layer:</strong> Route53, CloudFront, AWS WAF</li>
-<li><strong>Application Layer:</strong> ALB → ECS Fargate → ECR</li>
+<li><strong>Application Layer:</strong> ALB → EC2 Auto Scaling Group</li>
 <li><strong>Data Layer:</strong> RDS SQL Server, ElastiCache Redis</li>
 <li><strong>Event Layer:</strong> EventBridge, SNS, SQS</li>
 <li><strong>Analytics Layer:</strong> Kinesis → S3 → QuickSight → SageMaker</li>
@@ -1135,103 +1135,102 @@
 <h2 id="32-networking--access-layer">3.2 Networking &amp; Access Layer</h2>
 <ul>
 <li><strong>Route 53:</strong> Global DNS routing</li>
-<li><strong>CloudFront:</strong> CDN caching and low-latency access</li>
-<li><strong>AWS WAF:</strong> Protection from DDoS, SQL injection, XSS</li>
-<li><strong>Application Load Balancer:</strong> Routes traffic to microservices</li>
+<li><strong>CloudFront:</strong> CDN caching and global acceleration</li>
+<li><strong>AWS WAF:</strong> Security filtering (SQLi, XSS, bots)</li>
+<li><strong>Application Load Balancer:</strong> Routes traffic to EC2</li>
 </ul>
 <p><strong>Traffic Flow:</strong><br>
-<strong>User → Route53 → CloudFront → WAF → ALB → Private Subnet → ECS Fargate</strong></p>
+<strong>User → Route53 → CloudFront → WAF → ALB → Private Subnet → EC2 Instances</strong></p>
 <hr>
-<h2 id="33-application-layer--microservices-on-ecs-fargate">3.3 Application Layer — Microservices on ECS Fargate</h2>
-<h3 id="why-fargate">Why Fargate?</h3>
+<h2 id="33-application-layer--ec2-auto-scaling">3.3 Application Layer — EC2 Auto Scaling</h2>
+<h3 id="why-ec2">Why EC2?</h3>
 <ul>
-<li>No server management</li>
-<li>Autoscaling based on CPU/Memory</li>
-<li>High security in private subnets</li>
+<li>Full control over OS, runtime, and application environment</li>
+<li>Suitable for monolithic or microservice deployments</li>
+<li>Reliable for long-running backend services</li>
+<li>Auto Scaling based on CPU, network, request count</li>
+<li>EC2 roles for secure access to AWS resources</li>
 </ul>
-<h3 id="microservices">Microservices</h3>
+<h3 id="application-deployment-model">Application Deployment Model</h3>
+<ul>
+<li>Backend components deployed on <strong>EC2 Auto Scaling Group</strong></li>
+<li>EC2 instances in <strong>Private Subnets</strong> for security</li>
+<li>Deployed via <strong>CodeDeploy (Blue/Green or Rolling)</strong></li>
+</ul>
+<h3 id="backend-services-include">Backend Services Include:</h3>
 <ul>
 <li>Booking Service</li>
 <li>Schedule Service</li>
 <li>Payment Service</li>
 <li>Notification Service</li>
 <li>User Service</li>
-<li>Staff &amp; Operation Service</li>
+<li>Operation &amp; Reporting Service</li>
 </ul>
-<p><strong>Docker Images</strong> stored in <strong>Amazon ECR</strong></p>
 <hr>
 <h2 id="34-data-layer">3.4 Data Layer</h2>
 <h3 id="amazon-rds-sql-server">Amazon RDS (SQL Server)</h3>
 <ul>
 <li>Stores tickets, schedules, user accounts, payments</li>
-<li>Multi-AZ high availability</li>
-<li>Automated backup and failover</li>
-</ul>
-<h3 id="elasticache-redis">ElastiCache Redis</h3>
-<ul>
-<li>Cache schedules → reduce RDS load</li>
-<li>Increase API performance up to 10×</li>
+<li>Multi-AZ deployment ensures HA</li>
+<li>Automated backups and failover</li>
+<li>IAM authentication + encryption</li>
 </ul>
 <h3 id="amazon-s3">Amazon S3</h3>
 <ul>
-<li>Stores reports, invoices, files</li>
-<li>Destination for streaming data from Kinesis</li>
+<li>Stores documents, reports, logs, analytics data</li>
+<li>Destination for Kinesis stream data</li>
+<li>Lifecycle storage tiering for cost reduction</li>
 </ul>
 <hr>
 <h2 id="35-event--messaging-layer">3.5 Event &amp; Messaging Layer</h2>
 <h3 id="amazon-eventbridge">Amazon EventBridge</h3>
-<p>Automates workflows, including:</p>
+<p>Automates operations, e.g.:</p>
 <ul>
 <li>PaymentSuccess → CreateInvoice → NotifyUser</li>
-<li>ScheduleUpdate → BroadcastToMobile</li>
+<li>TrainDelay → PushNotifications → Dashboard Update</li>
 </ul>
 <h3 id="amazon-sqs">Amazon SQS</h3>
 <ul>
-<li>Queue system for notifications and ticket processing</li>
-<li>Protects services during traffic spikes</li>
+<li>Buffer queue for heavy workloads</li>
+<li>Prevents overload during peak hours</li>
 </ul>
 <h3 id="amazon-sns">Amazon SNS</h3>
 <ul>
-<li>Sends SMS, email, and push notifications</li>
+<li>Sends multi-channel notifications (SMS, email, push)</li>
 </ul>
 <hr>
 <h2 id="36-real-time-analytics">3.6 Real-Time Analytics</h2>
 <h3 id="kinesis-data-streams">Kinesis Data Streams</h3>
 <ul>
-<li>Ingests passenger traffic in real time</li>
-<li>Application logs → Kinesis → S3</li>
+<li>Real-time ingestion of passenger flow data</li>
+<li>App logs → Kinesis → S3 for analytics</li>
 </ul>
 <h3 id="quicksight">QuickSight</h3>
 <ul>
-<li>Dashboards for daily sales, station load, peak hours</li>
-</ul>
-<h3 id="sagemaker">SageMaker</h3>
-<ul>
-<li>Predict passenger demand</li>
-<li>Optimize train frequencies during peak hours</li>
+<li>Business dashboards: ticket sales, peak traffic, service delays</li>
 </ul>
 <hr>
 <h2 id="37-monitoring--observability">3.7 Monitoring &amp; Observability</h2>
 <ul>
-<li><strong>CloudWatch Metrics:</strong> CPU, Memory, ALB latency</li>
-<li><strong>CloudWatch Logs:</strong> Fargate application logs</li>
-<li><strong>SNS Alerts:</strong> Error notifications</li>
-<li><strong>CloudTrail:</strong> Governance &amp; admin activity tracking</li>
+<li><strong>CloudWatch Metrics:</strong> EC2 performance, ALB latency, RDS metrics</li>
+<li><strong>CloudWatch Logs:</strong> Application logs from EC2 via CloudWatch Agent</li>
+<li><strong>SNS Alerts:</strong> Critical system alerts</li>
+<li><strong>CloudTrail:</strong> Governance and audit logs</li>
 </ul>
 <hr>
 <h2 id="38-cicd-pipeline">3.8 CI/CD Pipeline</h2>
 <p>Developer Commit<br>
 → CodePipeline<br>
-→ CodeBuild<br>
-→ Build Docker Image<br>
-→ ECR<br>
+→ CodeBuild (build + test)<br>
+→ Artifact Storage<br>
 → CodeDeploy<br>
-→ ECS Fargate</p>
-<h3 id="features">Features:</h3>
+→ EC2 Auto Scaling Group</p>
+<h3 id="deployment-features">Deployment Features</h3>
 <ul>
-<li>Rolling deployments with <strong>zero downtime</strong></li>
-<li>ALB health checks</li>
+<li>Blue/Green or Rolling EC2 deployment</li>
+<li>Health check via ALB</li>
 <li>Automatic rollback on failure</li>
+<li>Zero downtime upgrade capability</li>
 </ul>
 <hr>
 <h1 id="4-deployment-plan">4. Deployment Plan</h1>
@@ -1252,7 +1251,7 @@
       <tr>
           <td>2</td>
           <td>3 weeks</td>
-          <td>ECS, ECR, RDS, ElastiCache</td>
+          <td>EC2 ASG, RDS</td>
       </tr>
       <tr>
           <td>3</td>
@@ -1267,17 +1266,17 @@
       <tr>
           <td>5</td>
           <td>2 weeks</td>
-          <td>CI/CD Pipeline</td>
+          <td>CI/CD Pipeline (CodeDeploy)</td>
       </tr>
       <tr>
           <td>6</td>
           <td>2 weeks</td>
-          <td>Security hardening, cost tuning</td>
+          <td>Hardening, cost optimization</td>
       </tr>
   </tbody>
 </table>
 <hr>
-<h1 id="5-estimated-monthly-operational-cost">5. Estimated Monthly Operational Cost</h1>
+<h1 id="5-estimated-monthly-operational-cost-ec2-architecture">5. Estimated Monthly Operational Cost (EC2 Architecture)</h1>
 <table>
   <thead>
       <tr>
@@ -1291,16 +1290,12 @@
           <td>$24</td>
       </tr>
       <tr>
-          <td>ECS Fargate</td>
-          <td>$40</td>
+          <td>EC2 ASG (t3.micro x 2 AZ)</td>
+          <td>$38</td>
       </tr>
       <tr>
           <td>RDS</td>
           <td>$19</td>
-      </tr>
-      <tr>
-          <td>ElastiCache Redis</td>
-          <td>$73</td>
       </tr>
       <tr>
           <td>S3 + Kinesis</td>
@@ -1316,18 +1311,19 @@
       </tr>
       <tr>
           <td><strong>Total Estimated Cost</strong></td>
-          <td><strong>$212</strong></td>
+          <td><strong>$210</strong></td>
       </tr>
   </tbody>
 </table>
 <hr>
 <h1 id="6-expected-outcomes">6. Expected Outcomes</h1>
 <ul>
-<li>Stable 24/7 rail transit operations</li>
-<li>1,000+ concurrent users supported</li>
-<li>Secure and automated payment processing</li>
-<li>Accurate passenger demand forecasting</li>
-<li>Reduced operation costs through autoscaling and CI/CD</li>
+<li>Reliable 24/7 transit system operations</li>
+<li>High-availability EC2 backend with autoscaling</li>
+<li>Secure payment processing and protected endpoints</li>
+<li>Real-time passenger analytics</li>
+<li>Optimized operational cost with correctly sized instances</li>
+<li>Zero-downtime deployment and easy maintenance</li>
 </ul>
 <hr>
 <h1 id="appendix-a--aws-services-summary">Appendix A — AWS Services Summary</h1>
@@ -1349,11 +1345,11 @@
       </tr>
       <tr>
           <td>Compute</td>
-          <td>ECS Fargate, ECR</td>
+          <td>EC2, Auto Scaling Group</td>
       </tr>
       <tr>
           <td>Database</td>
-          <td>RDS SQL Server, ElastiCache</td>
+          <td>RDS SQL Server</td>
       </tr>
       <tr>
           <td>Event</td>
@@ -1361,7 +1357,7 @@
       </tr>
       <tr>
           <td>Analytics</td>
-          <td>Kinesis, S3, QuickSight, SageMaker</td>
+          <td>Kinesis, S3, QuickSight</td>
       </tr>
       <tr>
           <td>Monitoring</td>
@@ -1373,7 +1369,7 @@
       </tr>
   </tbody>
 </table>
-<p><img src="../images/2-Proposal/aws_architecture.png" alt="AWS-architecture"></p>
+<p><img src="../images/2-Proposal/aws_metropolitano_train_service.png" alt="AWS-architecture"></p>
 
 
 
@@ -2074,19 +2070,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1764573317"></script>
-    <script src="../js/perfect-scrollbar.min.js?1764573317"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1764573317"></script>
-    <script src="../js/jquery.sticky.js?1764573317"></script>
-    <script src="../js/featherlight.min.js?1764573317"></script>
-    <script src="../js/highlight.pack.js?1764573317"></script>
+    <script src="../js/clipboard.min.js?1764690697"></script>
+    <script src="../js/perfect-scrollbar.min.js?1764690697"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1764690697"></script>
+    <script src="../js/jquery.sticky.js?1764690697"></script>
+    <script src="../js/featherlight.min.js?1764690697"></script>
+    <script src="../js/highlight.pack.js?1764690697"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom-3.6.0.js?1764573317"></script>
-    <script src="../js/learn.js?1764573317"></script>
-    <script src="../js/hugo-learn.js?1764573317"></script>
+    <script src="../js/modernizr.custom-3.6.0.js?1764690697"></script>
+    <script src="../js/learn.js?1764690697"></script>
+    <script src="../js/hugo-learn.js?1764690697"></script>
 
-    <link href="../mermaid/mermaid.css?1764573317" rel="stylesheet" />
-    <script src="../mermaid/mermaid.js?1764573317"></script>
+    <link href="../mermaid/mermaid.css?1764690697" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js?1764690697"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
