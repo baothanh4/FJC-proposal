@@ -379,6 +379,19 @@
                 href="http://localhost:1313/workshop-template/1-worklog/1.12-week12/"
                 />
   </url><url>
+    <loc>http://localhost:1313/workshop-template/1-worklog/1.13-week13/</loc>
+    <lastmod>2025-09-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/workshop-template/vi/1-worklog/1.13-week13/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/workshop-template/1-worklog/1.13-week13/"
+                />
+  </url><url>
     <loc>http://localhost:1313/workshop-template/5-workshop/5.3-s3-vpc/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -418,6 +431,19 @@
                 href="http://localhost:1313/workshop-template/3-blogstranslated/"
                 />
   </url><url>
+    <loc>http://localhost:1313/workshop-template/4-eventparticipated/4.3-event3/</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/workshop-template/vi/4-eventparticipated/4.3-event3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/workshop-template/4-eventparticipated/4.3-event3/"
+                />
+  </url><url>
     <loc>http://localhost:1313/workshop-template/5-workshop/5.4-s3-onprem/</loc>
     <lastmod>2025-09-07T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -455,6 +481,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/workshop-template/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/workshop-template/4-eventparticipated/4.4-event4/</loc>
+    <lastmod>2025-11-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/workshop-template/vi/4-eventparticipated/4.4-event4/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/workshop-template/4-eventparticipated/4.4-event4/"
                 />
   </url><url>
     <loc>http://localhost:1313/workshop-template/5-workshop/5.5-policy/</loc>
@@ -520,6 +559,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/workshop-template/7-feedback/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/workshop-template/1-worklog/1.14-week14/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/workshop-template/vi/1-worklog/1.14-week14/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/workshop-template/1-worklog/1.14-week14/"
                 />
   </url><url>
     <loc>http://localhost:1313/workshop-template/categories/</loc>

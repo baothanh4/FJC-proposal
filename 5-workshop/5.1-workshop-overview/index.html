@@ -15,21 +15,21 @@
     <title>Introduction :: Internship Report</title>
 
     
-    <link href="../../css/nucleus.css?1764690560" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1764690560" rel="stylesheet">
-    <link href="../../css/hybrid.css?1764690560" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1764690560" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1764690560" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1764690560" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1764690560" rel="stylesheet">
-    <link href="../../css/theme.css?1764690560" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1764690560" rel="stylesheet">
+    <link href="../../css/nucleus.css?1764953603" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1764953603" rel="stylesheet">
+    <link href="../../css/hybrid.css?1764953603" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1764953603" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1764953603" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1764953603" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1764953603" rel="stylesheet">
+    <link href="../../css/theme.css?1764953603" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1764953603" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1764690560" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1764953603" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1764690560"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1764953603"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1764690560"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1764690560"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1764953603"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1764953603"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/workshop-template\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1764690560"></script>
+<script type="text/javascript" src="../../js/search.js?1764953603"></script>
  
   </div>
 
@@ -334,6 +334,42 @@
   </a>
    
 </li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.13-week13/"
+  title="Week 13 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.13-week13/">
+     <b> 1.13. </b> Week 13 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.14-week14/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.14-week14/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
      
   </ul>
   
@@ -532,6 +568,42 @@
 >
   <a href="../../4-eventparticipated/4.2-event2/">
      <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.3-event3/"
+  title="Event 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.3-event3/">
+    <b> 4.4. </b>Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.4-event4/"
+  title="Event 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.4-event4/">
+    <b> 4.5. </b>Event 4 
     <i class="fas fa-check read-icon"></i>
     
   </a>
@@ -1015,18 +1087,101 @@
 
 
 
-	<h4 id="vpc-endpoints">VPC endpoints</h4>
-<ul>
-<li><strong>VPC endpoints</strong> are virtual devices. They are horizontally scaled, redundant, and highly available VPC components. They allow communication between your compute resources and AWS services without imposing availability risks.</li>
-<li>Compute resources running in VPC can access  <strong>Amazon S3</strong>  using a Gateway endpoint. PrivateLink interface endpoints can be used by compute resources running in VPC or on-premises.</li>
-</ul>
-<h4 id="workshop-overview">Workshop overview</h4>
-<p>In this workshop, you will use two VPCs.</p>
-<ul>
-<li><strong>&ldquo;VPC Cloud&rdquo;</strong> is for cloud resources such as a  <strong>Gateway endpoint</strong> and an EC2 instance to test with.</li>
-<li><strong>&ldquo;VPC On-Prem&rdquo;</strong> simulates an on-premises environment such as a factory or corporate datacenter. An EC2 instance running strongSwan VPN software has been deployed in &ldquo;VPC On-prem&rdquo; and automatically configured to establish a Site-to-Site VPN tunnel with AWS Transit Gateway. This VPN simulates connectivity from an on-premises location to the AWS cloud. To minimize costs, only one VPN instance is provisioned to support this workshop. When planning VPN connectivity for your production workloads, AWS recommends using multiple VPN devices for high availability.</li>
-</ul>
-<p><img src="../../images/5-Workshop/5.1-Workshop-overview/diagram1.png" alt="overview"></p>
+	<h4 id="workshop-overview">Workshop overview</h4>
+<p>Here is a proposed overview of how AWS services are used to set up the Metropolitano system, ensuring the criteria of &ldquo;high availability - secure - scalable&rdquo;:Overview of Metropolitano System Architecture on AWS</p>
+<p>The system is designed to manage, monitor and coordinate urban railway operations, using a range of AWS services for each functional layer:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Layer</th>
+          <th>AWS Services</th>
+          <th>Role on the Metropolitano system</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Network &amp; Security</td>
+          <td>Route 53</td>
+          <td>Manage DNS, route user (operator, management) traffic to applications efficiently and reliably.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>CloudFront</td>
+          <td>Content delivery network (CDN), which helps deliver static content (user interface, reports) with low latency and enhanced security.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>WAF (Web Application Firewall)</td>
+          <td>Protect web applications from common network attacks, filtering malicious traffic before it reaches the application server.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>Secrets Manager</td>
+          <td>Securely manage, rotate, and control access to sensitive information such as database (RDS) passwords, API keys, and other credentials. Helps strengthen application security and minimize the risk of information leakage.</td>
+      </tr>
+      <tr>
+          <td>Data storage &amp; Application</td>
+          <td>S3(Simple Storage Service)</td>
+          <td>Store all unstructured and rarely accessed data, such as logs, backups, and project documents</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>EC2(Elastic Compute Cloud)</td>
+          <td>Provides compute resources to run back-end applications, orchestration services, and user interfaces. Can be used in Auto Scaling Groups to ensure high availability.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>RDS (Relational Database Service) - MSSQL</td>
+          <td>Provides a fully managed relational database running on the Microsoft SQL Server platform. Used to store structured, mission-critical business data (route information, schedules, equipment status).</td>
+      </tr>
+      <tr>
+          <td>Collect &amp; process</td>
+          <td>Kinesis</td>
+          <td>Build event-driven architectures, automate workflows by connecting different AWS services when events occur (e.g., when data reaches an alert threshold)</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>EventBridge</td>
+          <td>Build event-driven architectures, automate workflows by connecting different AWS services when events occur (e.g., when data reaches an alert threshold)</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>SQS (Simple Queue Service)</td>
+          <td>Message queues to decouple system components, handle asynchronous tasks (e.g., sending mass notifications, handling dispatch commands).</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>SNS (Simple Notification Service)</td>
+          <td>Push notification service for important events, used to send alerts to other systems or operators via email/SMS.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>CloudWatch</td>
+          <td>Monitor resources and applications, collect logs, and set up alarms to ensure system stability and detect problems early.</td>
+      </tr>
+      <tr>
+          <td>Analyze &amp; Visualization</td>
+          <td>Quicksight</td>
+          <td>Business intelligence (BI) services to visualize data from RDS and Kinesis (after it has been processed), helping management monitor system status in real-time and make decisions.</td>
+      </tr>
+      <tr>
+          <td>Automation develop</td>
+          <td>CodePipeline</td>
+          <td>Continuous Integration and Delivery (CI/CD) services to automate the entire process of building, testing, and deploying application source code.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>CodeBuild</td>
+          <td>The service builds source code, runs automated tests, and generates deployment-ready packages.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>CodeDeploy</td>
+          <td>The service automates the deployment of source code to EC2 instances or other environments, ensuring smooth, uninterrupted updates.</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="../../images/5-Workshop/5.1-Workshop-overview/aws_metropolitano_train_service.drawio.png" alt="overview"></p>
 
 
 
@@ -1272,104 +1427,6 @@
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
             
             
@@ -1415,10 +1472,172 @@
 
                     
                     
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
                         
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1728,19 +1947,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1764690560"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1764690560"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1764690560"></script>
-    <script src="../../js/jquery.sticky.js?1764690560"></script>
-    <script src="../../js/featherlight.min.js?1764690560"></script>
-    <script src="../../js/highlight.pack.js?1764690560"></script>
+    <script src="../../js/clipboard.min.js?1764953603"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1764953603"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1764953603"></script>
+    <script src="../../js/jquery.sticky.js?1764953603"></script>
+    <script src="../../js/featherlight.min.js?1764953603"></script>
+    <script src="../../js/highlight.pack.js?1764953603"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1764690560"></script>
-    <script src="../../js/learn.js?1764690560"></script>
-    <script src="../../js/hugo-learn.js?1764690560"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1764953603"></script>
+    <script src="../../js/learn.js?1764953603"></script>
+    <script src="../../js/hugo-learn.js?1764953603"></script>
 
-    <link href="../../mermaid/mermaid.css?1764690560" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1764690560"></script>
+    <link href="../../mermaid/mermaid.css?1764953603" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1764953603"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
