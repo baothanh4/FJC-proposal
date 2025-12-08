@@ -207,7 +207,7 @@
 	"title": "Tạo Secret Manager",
 	"tags": [],
 	"description": "",
-	"content": "Sử dụng AWS Secrets Manager Trong phần này, bạn sẽ tạo Secrets Manager để lưu một secret. Secrets Manager sẽ lưu các key bí mật từ dự án của bạn như username và password của cơ sở dữ liệu, jwt secret key, và VNPAY key. Điều này hữu ích để lưu trữ trên AWS mà không cần lo lắng về việc các bí mật này bị lộ.\nNội dung Tạo secret manager "
+	"content": "Sử dụng AWS Secrets Manager Trong phần này, bạn sẽ tạo Secrets Manager để lưu một secret. Secrets Manager sẽ lưu các key bí mật từ dự án của bạn như username và password của cơ sở dữ liệu, jwt secret key, và VNPAY key. Điều này hữu ích để lưu trữ trên AWS mà không cần lo lắng về việc các bí mật này bị lộ. Nội dung Tạo secret manager "
 },
 {
 	"uri": "https://thienluhoan.github.io/workshop-template/vi/4-eventparticipated/4.3-event3/",
